@@ -195,11 +195,11 @@ def generar_diccionario_ampliaciones(file):
     return diccionario_obras_ampliacion
 
 def extraer_texto_entre_delimitadores_v2(texto, delimitador_inicial, delimitador_final):
-    pattern = re.compile(f"{delimitador_inicial}(.*?{delimitador_final}.*?)\.", re.DOTALL)
+    pattern = re.compile(rf"{re.escape(delimitador_inicial)}(.*?){re.escape(delimitador_final)}.*?\.", re.DOTALL)
     match = pattern.search(texto)
     return match.group(0) if match else "ERROR EXTRAYENDO TEXTO"
 
-def ejecutar_analisis_amp(file, diccionario):
+def generar_diccionario_descripciones_amp(file, diccionario):
     dic_descripciones = {}
     try:
 
@@ -218,8 +218,6 @@ def ejecutar_analisis_amp(file, diccionario):
 
                 dic_descripciones[titulo] = descripcion_def
 
-                print(descripcion_def)
-                print("\n")
 
     except Exception as e:
         print(f"Error en la ejecución del análisis: {e}")

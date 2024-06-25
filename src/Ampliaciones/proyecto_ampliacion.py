@@ -118,10 +118,6 @@ def ejecutar_analisis_2(diccionario_final, file):
 
                 proyecto = Proyecto_ampliacion(descripcion)
                 proyecto.procesar_texto_v2()
-                #proyecto.resumen_proyecto_por_patio()
-                #vamos a reemplazar los digitos numericos del principio de cada titulo, para guardarlo como nombre del proyecto
-                nombre_proyecto = re.sub(r'^\d+\s', '', titulo)
-                proyecto.nombre_proyecto = nombre_proyecto
 
                 proyecto.nombre = f"S/E {proyecto.nombre}"
 
@@ -161,28 +157,36 @@ def ejecutar_analisis_2(diccionario_final, file):
 
 
 class Proyecto_ampliacion:
-    def __init__(self, texto):
+    def __init__(self, titulo, texto):
         self.nlp = nlp
+        self.texto = texto
         self.doc = self.nlp(texto.strip())
-        self.nombre = None
+
+
+        self.nombre_proyecto = titulo
+        self.indices = None
         self.tipo = "Ampliación"
-        #self.ubicacion = None
-        self.nombre_proyecto = None
+        self.patios = [] #a partir del resumen, podemos extraer el resumen de cada patio y extraer la informacion necesaria: Tension, Config, N_posiciones, Conexiones. Pos_disp.
+
+        self.valor_inversion = None
+        self.entrada_operacion = None
+
+
         self.numero_posiciones = None
         self.patios = [] #??
         self.lista_conexiones = []
         self.posiciones_disponibles = "No procesed"
 
         self.resumen_proyecto = ""
-        self.cofiguracion = ""
-        self.objetivo = ""
+        self.decreto =  "PET Final 2023"
+
 
 
     def __str__(self):
         return f"Nombre: {self.nombre}\nTipo: {self.tipo}"
     
 
-    def encontrar_indices_parrafos(self):
+    def encontrar_indices_parrafos_v1(self):
         indices = []
         for sent in self.doc.sents:
             if sent.text.startswith("El proyecto consiste en") or \
@@ -586,13 +590,8 @@ class Proyecto_ampliacion:
 
 
     def procesar_texto_v2(self):
-        descripcion = False
-        configuracion = False
-        objetivo = False
-        patio = False
 
-
-        indices = self.encontrar_indices_parrafos()
+        indices = self.encontrar_indices_parrafos_v1()
 
         self.nombre = self.extraer_nombre()
         #print("Nombre:", self.nombre)
@@ -653,6 +652,112 @@ class Proyecto_ampliacion:
                 # Vamos a escribir cosas auxiliares en estos casos
 
 
+    def encontrar_indices_parrafos(self):
+
+        """
+        La funcion devolverá una lista, donde cada elemento es la posición de inicio de un párrafo en la descripción.
+        Se considera que un párrafo inicia con una de las frases de inicio definidas en la lista frases_inicio.
+
+        Se pueden utilizar dichos indices para extraer los parrafos de la descripcion segun se necesite.
+        Por ejemplo, para separar los distintos patios, lineas nuevas, etc.
+        """
+
+
+
+        # Lista de frases de inicio de los párrafos
+        frases_inicio = [
+            "El proyecto consiste en",
+            "A su vez, el proyecto incluye",
+            "A su vez, el proyecto considera",
+            "A su vez, el proyecto consiste en",
+            "A su vez, el proyecto contempla",
+            "Por su parte",
+            "La configuración del patio",
+            "Adicionalmente, el proyecto considera",
+            "Adicionalmente, el proyecto contempla",
+            "Además, el proyecto contempla",
+            "Además, el proyecto considera",
+            "La capacidad de barras",
+            "La subestación se deberá emplazar",
+            "Finalmente, el proyecto"
+        ]
+    
+        # Crear un patrón de expresión regular que busque todas las frases de inicio
+        pattern = re.compile('|'.join(re.escape(frase) for frase in frases_inicio))
+
+        # Encontrar todas las posiciones de inicio de las frases
+        indices = [match.start() for match in pattern.finditer(self.texto)]
+        
+        return indices
+
+
+
+    def extraer_texto_entre_delimitadores_v2(self, texto, delimitador_inicial, delimitador_final):
+        pattern = re.compile(f"{delimitador_inicial}(.*?{delimitador_final}.*?)\.", re.DOTALL)
+        match = pattern.search(texto)
+        return match.group(0) if match else "ERROR EXTRAYENDO TEXTO"
+
+    def extraer_resumen(self):
+        # Definimos las frases de inicio y fin
+        frase_inicio = "El proyecto consiste en"
+        frase_fin = "El proyecto incluye todas las obras"
+        
+        # Utilizamos una expresión regular para encontrar el texto entre las frases
+        patron = re.compile(re.escape(frase_inicio) + r'(.*?)(?=' + re.escape(frase_fin) + ')', re.DOTALL)
+        
+        # Buscamos el patrón en el string de entrada
+        coincidencia = patron.search(self.texto)
+        
+        # Si encontramos una coincidencia, la devolvemos, de lo contrario devolvemos None
+        if coincidencia:
+            return coincidencia.group(0).strip()
+        else:
+            return None
+    
+    def extraer_valor_inversion(self):
+        # Patrón de expresión regular para encontrar el valor de inversión
+        patron = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)?) dólares", re.IGNORECASE)
+
+        # Buscar el valor de inversión en la descripción
+        match = patron.search(self.texto)
+
+        if match:
+            # Extraer y devolver la frase completa encontrada
+            valor_inversion = match.group(0)
+            return valor_inversion
+        else:
+            return None  # Devolver None si no se encuentra el valor de inversión
+
+    def extraer_entrada_operacion(self):
+        # patron que identifique la frase: El proyecto deberá ser construido y entrar en operación, a más tardar, dentro de los dd meses siguientes a la fecha de publicación en el Diario Oficial del respectivo decreto
+
+        patron = re.compile(r"a más tardar, dentro de los \d{1,2} meses siguientes a la fecha de publicación en el Diario Oficial del respectivo decreto", re.IGNORECASE)
+
+        match = patron.search(self.texto)
+
+        if match:
+            entrada_operacion = match.group(0)
+            return entrada_operacion
+        else:
+            return None # Devolver None si no se encuentra la fecha de entrada en operación
+
+
+    def imprimir_resumen_atributos_proyecto(self):
+        print(f"Nombre del proyecto: {self.nombre_proyecto}")
+        print(f"Tipo de proyecto: {self.tipo}")
+        print(f"Resumen del proyecto: {self.resumen_proyecto}")
+        print(f"Valor de inversión: {self.valor_inversion}")
+        print(f"Entrada en operación: {self.entrada_operacion}")
+        print("\n")
+
+
+
+    def procesar_descripcion(self):
+        self.indices = self.encontrar_indices_parrafos()
+        self.resumen_proyecto = self.extraer_resumen()
+        self.entrada_operacion = self.extraer_entrada_operacion()
+        self.valor_inversion = self.extraer_valor_inversion()
+        self.imprimir_resumen_atributos_proyecto()
 
 
 
