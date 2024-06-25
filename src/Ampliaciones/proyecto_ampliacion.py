@@ -36,6 +36,7 @@ from openpyxl import Workbook
 # Cargar el modelo en español
 nlp = spacy.load("es_core_news_lg")
 
+
 def generar_diccionario_ampliaciones(file):
 
 

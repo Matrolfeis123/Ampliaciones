@@ -88,8 +88,6 @@ def buscar_subestacion_por_nombre_v2(kml_file, nombre_subestacion_referencia):
 
 
 
-
-
 def buscar_subestacion_por_nombre(kml_file, nombre_subestacion):
 
     tree = ET.parse(kml_file)
