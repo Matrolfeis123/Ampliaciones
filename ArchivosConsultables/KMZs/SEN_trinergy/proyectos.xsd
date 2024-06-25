@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="proyectos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="proyecto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="patio" maxOccurs="3" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tension" type="xs:string" />
+                                        <xs:element name="conexiones" type="xs:string" />
+                                        <xs:element name="posiciones_disponibles" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="obra" type="xs:string" use="required" />
+                        <xs:attribute name="decreto" type="xs:string" use="required" />
+                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                        <xs:attribute name="vi" type="xs:string" use="required" />
+                        <xs:attribute name="entrada_op" type="xs:date" use="required" />
+                        <xs:attribute name="resumen" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
