@@ -1,0 +1,478 @@
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Tomeco</ns0:name>
+    <ns0:styleUrl>#ONva1</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din">
+            <ns0:SimpleData name="OBRA">Nueva S/E Tomeco</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">13.980.034 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada Tomeco,
+                mediante el seccionamiento de la l&#237;nea 2x220 kV Charr&#250;a
+                &#8211; Hualqui con sus respectivos pa&#241;os de l&#237;nea y un
+                patio de 220 kV en configuraci&#243;n interruptor y medio.
+                Adicionalmente, el proyecto contempla la construcci&#243;n de los
+                enlaces que corresponda para realizar el seccionamiento de la
+                l&#237;nea antes mencionada en la subestaci&#243;n Tomeco, los
+                cuales deber&#225;n permitir la transmisi&#243;n de, al menos, 700
+                MVA por circuito a 35&#176;C temperatura ambiente con sol.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 220 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">N/A</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles" />
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-72.57138882578185,-37.00991525958945,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E El Peral, seccionamiento l&#237;nea 2x110 kV Florida &#8211;
+        Tap Vizcachas y normalizaci&#243;n l&#237;nea 1x110 kV Puente Alto &#8211;
+        Tap Vizcachas</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E El Peral, seccionamiento
+                l&#237;nea 2x110 kV Florida &#8211; Tap Vizcachas y
+                normalizaci&#243;n l&#237;nea 1x110 kV Puente Alto &#8211; Tap
+                Vizcachas</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">20.118.509 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 36
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada El
+                Peral, mediante el seccionamiento de la actual l&#237;nea 2x110 kV
+                Florida &#8211; Vizcachas con sus respectivos pa&#241;os de
+                l&#237;nea y patios de 110 kV y 12 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 110/12 kV de, al
+                menos, 50 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 110 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                110/12
+                kV', 'conexi&#243;n del seccionamiento de la l&#237;nea 2x110 kV
+                Florida &#8211; Vizcachas', 'conexi&#243;n de la normalizaci&#243;n
+                de la l&#237;nea 1x110 kV Puente Alto- Vizcachas',
+                'construcci&#243;n de un pa&#241;o acoplador', 'construcci&#243;n de
+                un pa&#241;o seccionador de barras', 'conexi&#243;n de nuevos
+                proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 12 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 110/12 kV antes mencionado y espacio en barra y plataforma
+                para la construcci&#243;n de cuatro pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.53535628811952,-33.57750258371317,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Ca&#241;averal</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Ca&#241;averal</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">11.320.686 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 48
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada
+                Ca&#241;averal, mediante el seccionamiento de la l&#237;nea 2x66 kV
+                Punta de Cort&#233;s &#8211; Cachapoal con sus respectivos
+                pa&#241;os de l&#237;nea y patios de 66 kV y 15 kV. A su vez, el
+                proyecto considera la instalaci&#243;n de un transformador 66/15 kV
+                de 50 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo Carga
+                (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 66 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder 66/15
+                kV', 'conexi&#243;n del seccionamiento de la l&#237;nea 2x66 kV
+                Punta de Cort&#233;s &#8211; Cachapoal', 'construcci&#243;n de un
+                pa&#241;o acoplador', 'construcci&#243;n de un pa&#241;o seccionador
+                de barras', 'conexi&#243;n de nuevos proyectos en la
+                zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 15 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para alimentadores
+                y el pa&#241;o de conexi&#243;n del transformador antes
+                mencionado.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 6
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.76812799355174,-34.18702966127415,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E El Carmen</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E El Carmen</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">8.613.569 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada El
+                Carmen, mediante el seccionamiento de la l&#237;nea 1x66 kV Las
+                Cabras &#8211; El Manzano con sus respectivos pa&#241;os de
+                l&#237;nea y patios de 66 kV y 15 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 66/15 kV de, al
+                menos,30 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 66 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder 66/15
+                kV', 'conexi&#243;n del seccionamiento de la l&#237;nea 1x66 kV Las
+                Cabras &#8211; El Manzano', 'conexi&#243;n de la l&#237;nea asociada
+                al proyecto &#8220;Nueva l&#237;nea 2x66 kV Fuentecilla &#8211; El
+                Carmen&#8221;', 'construcci&#243;n de un pa&#241;o acoplador',
+                'construcci&#243;n de un pa&#241;o seccionador de barras',
+                'conexi&#243;n de un nuevo proyecto en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">1</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 15 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n del transformador antes
+                mencionado', 'pa&#241;o para la conexi&#243;n de un banco de
+                condensadores y espacio en barra para la construcci&#243;n de dos
+                pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 5
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-71.38460352690213,-34.25602834153011,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E El Quelm&#233;n</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E El Quelm&#233;n</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">8.309.205 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 48
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada El
+                Quelm&#233;n, mediante el seccionamiento de la l&#237;nea 1x66 kV
+                San Fernando &#8211; Teno, con sus respectivos pa&#241;os de
+                l&#237;nea y patios de 66 kV y 13,2 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 66/13,2 kV de al
+                menos 50 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 66 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                66/13', '2 kV', 'conexi&#243;n del seccionamiento de
+                la l&#237;nea
+                1x66 kV San Fernando &#8211; Teno', 'construcci&#243;n de un
+                pa&#241;o acoplador', 'construcci&#243;n de un pa&#241;o seccionador
+                de barras', 'conexi&#243;n de nuevos proyectos en la
+                zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 13,2 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para alimentadores
+                y el pa&#241;o de conexi&#243;n del transformador antes
+                mencionado.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 6
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-71.11624344578294,-34.83834320205366,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Alto Molle y nueva l&#237;nea 2x110 kV Alto Molle &#8211;
+        C&#243;ndores</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Alto Molle y nueva l&#237;nea
+                2x110 kV Alto Molle &#8211; C&#243;ndores</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">16.800.105 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada Alto
+                Molle, con patios de 110 kV y 13,8 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 110/13,8 kV de, al
+                menos, 30 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 110 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                110/13', '8 kV', 'conexi&#243;n de la nueva l&#237;nea
+                2x110 kV Alto
+                Molle &#8211; C&#243;ndores', 'conexi&#243;n de la obra &#8220;Nueva
+                S/E Huayquique y nueva l&#237;nea 2x110 kV Huayquique &#8211; Alto
+                Molle&#8221;', 'construcci&#243;n de un pa&#241;o acoplador',
+                'construcci&#243;n de un pa&#241;o seccionador de barras',
+                'conexi&#243;n de nuevos proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 13,8 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 110/13', '8 kV antes mencionado y espacio en barra y
+                plataforma para la construcci&#243;n de dos pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.066407,-20.271864,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Huayquique y nueva l&#237;nea 2x110 kV Huayquique &#8211;
+        Alto Molle</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Huayquique y nueva l&#237;nea
+                2x110 kV Huayquique &#8211; Alto Molle</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">21.628.808 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada
+                Huayquique, con patios de 110 kV y 13,8 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 110/13,8 kV de, al
+                menos, 30 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 110 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                110/13', '8 kV', 'conexi&#243;n de la nueva l&#237;nea
+                2x110 kV
+                Huayquique &#8211; Alto Molle', 'construcci&#243;n de un pa&#241;o
+                acoplador', 'construcci&#243;n de un pa&#241;o seccionador de
+                barras', 'conexi&#243;n de nuevos proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 13,8 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 110/13', '8 kV antes mencionado y espacio en barra y
+                plataforma para la construcci&#243;n de dos pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.124026,-20.302242,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E La Chimba y nueva l&#237;nea 2x110 kV Mejillones &#8211; La
+        Chimba</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E La Chimba y nueva l&#237;nea 2x110
+                kV Mejillones &#8211; La Chimba</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">38.556.303 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada La
+                Chimba, mediante el seccionamiento de la actual l&#237;nea 1x110 kV
+                Tap Desalant &#8211; Desalant con sus respectivos pa&#241;os de
+                l&#237;nea y patios de 110 kV y 23 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 110/23 kV de, al
+                menos, 30 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 110 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                110/23
+                kV', 'conexi&#243;n del seccionamiento de la l&#237;nea 1x110 kV Tap
+                Desalant &#8211; Desalant', 'conexi&#243;n de la nueva l&#237;nea
+                2x110 kV Mejillones &#8211; La Chimba', 'construcci&#243;n de un
+                pa&#241;o acoplador', 'construcci&#243;n de un pa&#241;o seccionador
+                de barras', 'conexi&#243;n de nuevos proyectos en la
+                zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 23 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 110/23 kV antes mencionado y espacio en barra y plataforma
+                para la construcci&#243;n de dos pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 3
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.40326399999999,-23.531082,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Caracoles, nuevas l&#237;neas 2x220 kV Caracoles &#8211;
+        Liqcau y 2x110 kV Guardiamarina &#8211; Caracoles</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Caracoles, nuevas l&#237;neas
+                2x220 kV Caracoles &#8211; Liqcau y 2x110 kV Guardiamarina &#8211;
+                Caracoles</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">44.715.421 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 54
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada
+                Caracoles, mediante la conexi&#243;n de las l&#237;neas 1x110 kV
+                Antofagasta &#8211; Tap Uribe, 1x110 kV Esmeralda &#8211; Tap Uribe,
+                1x110 kV Capricornio &#8211; Tap Uribe y 1x110 kV Uribe &#8211; Tap
+                Uribe, con sus respectivos pa&#241;os de l&#237;nea y patios en 220
+                kV y 110 kV. A su vez, el proyecto considera la instalaci&#243;n de
+                un banco de autotransformadores 220/110 kV de, al menos, 150 MVA de
+                capacidad con Cambiador de Derivaci&#243;n Bajo Carga (CDBC)
+                m&#225;s unidad de reserva, la cual deber&#225; contar con
+                conexi&#243;n autom&#225;tica, y sus respectivos pa&#241;os de
+                conexi&#243;n en ambos niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 220 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['la l&#237;nea 2x220 kV
+                Caracoles &#8211; Liqcau', 'conexi&#243;n del transformador de poder
+                220/110 kV', 'conexi&#243;n de la l&#237;nea asociada al proyecto
+                &#8220;Extensi&#243;n de l&#237;nea 1x220 kV Atacama &#8211;
+                Esmeralda y cambio de conexi&#243;n a S/E Caracoles&#8221;',
+                'conexi&#243;n de nuevos proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">4</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 110 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['banco de autotransformadores
+                220/110 kV', 'conexi&#243;n de las l&#237;neas 1x110 kV Antofagasta
+                &#8211; Tap Uribe', '1x110 kV Esmeralda &#8211; Tap Uribe',
+                '1x110
+                kV Capricornio &#8211; Tap Uribe y 1x110 kV Uribe &#8211; Tap
+                Uribe', 'conexi&#243;n de la l&#237;nea 2x110 kV Guardiamarina
+                &#8211; Caracoles', 'construcci&#243;n de un pa&#241;o acoplador',
+                'construcci&#243;n de un pa&#241;o seccionador de barras',
+                'conexi&#243;n de nuevos proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">1</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-70.33254599999999,-23.620395,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Coihueco y nueva l&#237;nea 2x66 kV Monterrico &#8211;
+        Coihueco</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Coihueco y nueva l&#237;nea 2x66
+                kV Monterrico &#8211; Coihueco</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">20.137.718 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 48
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada
+                Coihueco, con patios de 66 kV y 13,8 kV. A su vez, el proyecto
+                considera la instalaci&#243;n de un transformador 66/13,8 kV de, al
+                menos, 30 MVA de capacidad, con Cambiador de Derivaci&#243;n Bajo
+                Carga (CDBC) y sus respectivos pa&#241;os de conexi&#243;n en ambos
+                niveles de tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 66 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                66/13', '8 kV', 'conexi&#243;n de la nueva l&#237;nea 2x66
+                kV
+                Monterrico &#8211; Coihueco', 'conexi&#243;n de la obra &#8220;Nueva
+                S/E Pinto y nueva l&#237;nea 2x66 kV Coihueco &#8211; Pinto&#8221;',
+                'construcci&#243;n de un pa&#241;o acoplador', 'construcci&#243;n de
+                un pa&#241;o seccionador de barras', 'conexi&#243;n de nuevos
+                proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 13,8 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 66/13', '8 kV antes mencionado y espacio en barra y
+                plataforma
+                para la construcci&#243;n de dos pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-71.852723,-36.628637,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
+<ns0:Placemark>
+    <ns0:name>Nueva S/E Pinto y nueva l&#237;nea 2x66 kV Coihueco &#8211; Pinto</ns0:name>
+    <ns0:styleUrl>#ONva2</ns0:styleUrl>
+    <ns0:ExtendedData>
+        <ns0:SchemaData schemaUrl="#ONva_din2">
+            <ns0:SimpleData name="OBRA">Nueva S/E Pinto y nueva l&#237;nea 2x66 kV
+                Coihueco &#8211; Pinto</ns0:SimpleData>
+            <ns0:SimpleData name="DECRETO">PET 2023</ns0:SimpleData>
+            <ns0:SimpleData name="TIPO">Nueva S/E</ns0:SimpleData>
+            <ns0:SimpleData name="VI">16.440.173 d&#243;lares</ns0:SimpleData>
+            <ns0:SimpleData name="ENTRADA_OP">a m&#225;s tardar, dentro de los 48
+                meses siguientes a la fecha de publicaci&#243;n en el Diario Oficial
+                del respectivo decreto</ns0:SimpleData>
+            <ns0:SimpleData name="RESUMEN">El proyecto consiste en la
+                construcci&#243;n de una nueva subestaci&#243;n, denominada Pinto,
+                con patios de 66 kV y 13,8 kV. A su vez, el proyecto considera la
+                instalaci&#243;n de un transformador 66/13,8 kV de, al menos, 30 MVA
+                de capacidad, con Cambiador de Derivaci&#243;n Bajo Carga (CDBC) y
+                sus respectivos pa&#241;os de conexi&#243;n en ambos niveles de
+                tensi&#243;n.</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_tension">patio de 66 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_conexiones">['transformador de poder
+                66/13', '8 kV', 'conexi&#243;n de la nueva l&#237;nea 2x66
+                kV
+                Coihueco &#8211; Pinto', 'construcci&#243;n de un pa&#241;o
+                acoplador', 'construcci&#243;n de un pa&#241;o seccionador de
+                barras', 'conexi&#243;n de nuevos proyectos en la zona.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_tension">patio de 13,8 kV</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_conexiones">['pa&#241;os para
+                alimentadores', 'pa&#241;o de conexi&#243;n para el transformador de
+                poder 66/13', '8 kV antes mencionado y espacio en barra y
+                plataforma
+                para la construcci&#243;n de dos pa&#241;os futuros.']</ns0:SimpleData>
+            <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4
+                pa&#241;o(s)</ns0:SimpleData>
+        </ns0:SchemaData>
+    </ns0:ExtendedData>
+    <ns0:Point>
+        <ns0:coordinates>-71.895213,-36.694424,0</ns0:coordinates>
+    </ns0:Point>
+</ns0:Placemark>
