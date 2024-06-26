@@ -153,7 +153,8 @@ class Patio:
 
 
         return "Revisar manualmente, al parecer no hay conexiones en el texto."
-    
+
+
     def calcular_posiciones_disponibles(self):
         numeros = {
             "uno": 1,
