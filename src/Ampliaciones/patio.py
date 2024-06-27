@@ -4,10 +4,10 @@
 import re
 from funciones_extra import extraer_texto_entre_delimitadores_v2
 
+
 class Patio:
-    def __init__(self, descripcion: str, patio_paño_alimentador: bool, proyecto_padre=None):
+    def __init__(self, descripcion: str, proyecto_padre = None):
         self.texto = descripcion
-        self.patio_paño_alimentador = patio_paño_alimentador
         self.proyecto_padre = proyecto_padre # Corresponde a la instancia de la clase Proyecto a la que pertenece el patio
 
         self.nombre = None
@@ -36,7 +36,7 @@ class Patio:
         self.nombre = self.extraer_tension()
         self.tension = self.nombre
         self.configuracion = self.extraer_configuracion()
-        self.posiciones = self.extraer_numero_posiciones()
+        self.posiciones = self.extraer_numero_posiciones_v3()
         self.lista_conexiones = self.extraer_conexiones()
         self.calcular_posiciones_disponibles()
     
@@ -69,7 +69,6 @@ class Patio:
             
             else:
                 return "No se encontro tension de patio o barra o celda, por lo que se imprimira un resumen del proyecto directamente"
-            
 
     def extraer_numero_posiciones_v3(self):
         numeros = {
@@ -108,8 +107,6 @@ class Patio:
             numero = numeros.get(numero_str.lower(), int(numero_str) if numero_str.isdigit() else 0)
             return f"al menos {numero} celda(s) para alimentadores"
 
-
-            
         elif match3:
             numero_str = match3.group(1)
             numero = numeros.get(numero_str.lower(), int(numero_str) if numero_str.isdigit() else 0)
@@ -117,7 +114,6 @@ class Patio:
 
         else:
             return False
-
 
     def extraer_conexiones(self):
 
@@ -153,7 +149,6 @@ class Patio:
 
 
         return "Revisar manualmente, al parecer no hay conexiones en el texto."
-
 
     def calcular_posiciones_disponibles(self):
         numeros = {
@@ -249,6 +244,17 @@ class Patio:
                         elif "paño seccionador" in conexion:
                             self.posiciones_disponibles -= 1
 
+                        elif "un paño para la línea" in conexion:
+                            patron = r'\b(\d+)x\d{2,3}\b'
+                            coincidencias = re.findall(patron, conexion)
+
+                            if coincidencias:
+                                for coincidencia in coincidencias:
+                                    posic_ocup = int(coincidencia[0])
+                                    self.posiciones_disponibles -= posic_ocup
+
+
+
                         else:
                             print("Revisar tipo de paño a conectar xdddd")
                             continue
@@ -300,6 +306,15 @@ class Patio:
             except Exception as e:
                 print(f"Error: {e}")
                 return ""
+
+class SalaCeldas:
+    pass
+
+class Paños:
+    pass
+
+class SeccionBarra:
+    pass
 
 
 

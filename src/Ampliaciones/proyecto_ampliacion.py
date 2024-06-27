@@ -5,6 +5,7 @@ import re
 import time
 import pdfplumber
 from openpyxl import Workbook
+from patio import Patio
 
 
 ############################################################################################################
@@ -167,6 +168,8 @@ class Proyecto_ampliacion:
         self.indices = None
         self.tipo = "Ampliación"
         self.patios = [] #a partir del resumen, podemos extraer el resumen de cada patio y extraer la informacion necesaria: Tension, Config, N_posiciones, Conexiones. Pos_disp.
+        self.diccionario_patios = None
+
 
         self.valor_inversion = None
         self.entrada_operacion = None
@@ -181,10 +184,23 @@ class Proyecto_ampliacion:
         self.decreto =  "PET Final 2023"
 
 
-
     def __str__(self):
         return f"Nombre: {self.nombre}\nTipo: {self.tipo}"
     
+
+    def procesar_descripcion(self):
+        self.indices = self.encontrar_indices_parrafos()
+        self.resumen_proyecto = self.extraer_resumen()
+        self.numero_posiciones = self.extraer_numero_posiciones_v3(self.resumen_proyecto)
+        self.entrada_operacion = self.extraer_entrada_operacion()
+        self.valor_inversion = self.extraer_valor_inversion()
+
+        self.diccionario_patios = self.separar_por_patios() # Este diccionario contiene los parrafos separados por categorias, para posteriormente procesar_parragos_patios
+        self.procesar_parrafos_patios()
+
+        self.imprimir_resumen_atributos_proyecto()
+
+
 
     def encontrar_indices_parrafos_v1(self):
         indices = []
@@ -588,7 +604,6 @@ class Proyecto_ampliacion:
             return ""
 
 
-
     def procesar_texto_v2(self):
 
         indices = self.encontrar_indices_parrafos_v1()
@@ -691,11 +706,11 @@ class Proyecto_ampliacion:
         return indices
 
 
-
     def extraer_texto_entre_delimitadores_v2(self, texto, delimitador_inicial, delimitador_final):
         pattern = re.compile(f"{delimitador_inicial}(.*?{delimitador_final}.*?)\.", re.DOTALL)
         match = pattern.search(texto)
         return match.group(0) if match else "ERROR EXTRAYENDO TEXTO"
+
 
     def extraer_resumen(self):
         # Definimos las frases de inicio y fin
@@ -713,7 +728,8 @@ class Proyecto_ampliacion:
             return coincidencia.group(0).strip()
         else:
             return None
-    
+
+  
     def extraer_valor_inversion(self):
         # Patrón de expresión regular para encontrar el valor de inversión
         patron = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)?) dólares", re.IGNORECASE)
@@ -727,6 +743,7 @@ class Proyecto_ampliacion:
             return valor_inversion
         else:
             return None  # Devolver None si no se encuentra el valor de inversión
+
 
     def extraer_entrada_operacion(self):
         # patron que identifique la frase: El proyecto deberá ser construido y entrar en operación, a más tardar, dentro de los dd meses siguientes a la fecha de publicación en el Diario Oficial del respectivo decreto
@@ -751,13 +768,115 @@ class Proyecto_ampliacion:
         print("\n")
 
 
+    def extraer_numero_posiciones_v3(self, parrafo):
+        numeros = {
+            "uno": 1,
+            "una": 1,
+            "dos": 2,
+            "tres": 3,
+            "cuatro": 4,
+            "cinco": 5,
+            "seis": 6,
+            "siete": 7,
+            "ocho": 8,
+            "nueve": 9,
+            "diez": 10
+        }
+        pattern1 = re.compile(r'\b(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez)(?: (nueva|nuevas))? (posición|posiciones|diagonal|diagonales)\b', re.IGNORECASE)
+        pattern2 = re.compile(r'\b(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez) (celda para alimentador|celdas para alimentadores)\b', re.IGNORECASE)
+        pattern3 = re.compile(r'\b(\d+|uno|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez) (paño|paños)\b', re.IGNORECASE)
 
-    def procesar_descripcion(self):
-        self.indices = self.encontrar_indices_parrafos()
-        self.resumen_proyecto = self.extraer_resumen()
-        self.entrada_operacion = self.extraer_entrada_operacion()
-        self.valor_inversion = self.extraer_valor_inversion()
-        self.imprimir_resumen_atributos_proyecto()
+
+        match1 = pattern1.search(self.texto)
+        match2 = pattern2.search(self.texto)
+        match3 = pattern3.search(self.texto)
+
+        if match1:
+            numero_str, _, tipo = match1.groups()
+            numero = numeros.get(numero_str.lower(), int(numero_str) if numero_str.isdigit() else 0)
+
+            if tipo.lower() == "diagonales" or tipo.lower() == "diagonal":
+                return numero * 2
+            elif tipo.lower() == "posiciones" or tipo.lower() == "posición":
+                return numero
+        
+        elif match2:
+            numero_str, tipo = match2.groups()
+            numero = numeros.get(numero_str.lower(), int(numero_str) if numero_str.isdigit() else 0)
+            return f"al menos {numero} celda(s) para alimentadores"
+
+
+            
+        elif match3:
+            numero_str = match3.group(1)
+            numero = numeros.get(numero_str.lower(), int(numero_str) if numero_str.isdigit() else 0)
+            return f"al menos {numero} paño(s)"
+
+        else:
+            return False
+
+    def separar_por_patios(self):
+        """ 
+        Esta funcion recibe la descripcion del proyecto y la separa en parrafos segun la informacion de los patios, celdas y paños.
+        La funcion devuelve un diccionario con los parrafos separados en las siguientes categorias:
+        - patios
+        - celdas
+        - paños
+        - otros
+
+        A cada categoria debe ejecutarse un procesamiento adicional para extraer la informacion necesaria, tal como la configuracion, numero de posiciones, etc.
+        """
+
+
+        parrafos = self.texto.split(".")
+        palabras_clave_patios = ["patio"]
+        palabras_clave_celdas = ["sala de celdas"]
+        palabras_clave_paños = ["paño", "paños"]
+        palabras_posiciones = ["diagonales", "posiciones", "posición", "diagonal"]
+        parrafos_patios = [parrafo for parrafo in parrafos if any(palabra in parrafo for palabra in palabras_clave_patios) and "configuración" in parrafo and any(palabra in parrafo for palabra in palabras_posiciones)]
+        parrafos_celdas = [parrafo for parrafo in parrafos if any(palabra in parrafo for palabra in palabras_clave_celdas) and "configuración" in parrafo and any(palabra in parrafo for palabra in palabras_posiciones)]
+        parrafos_paños = [parrafo for parrafo in parrafos if any(palabra in parrafo for palabra in palabras_clave_paños) and "configuración" and any(palabra in parrafo for palabra in palabras_posiciones)]
+        parrafos_otros = [parrafo for parrafo in parrafos if parrafo not in parrafos_patios and parrafo not in parrafos_celdas and parrafo not in parrafos_paños]
+        
+        diccionario_parrafos = {
+            "patios": parrafos_patios,
+            "celdas": parrafos_celdas,
+            "paños": parrafos_paños,
+            "otros": parrafos_otros
+        }
+
+        return diccionario_parrafos
+    
+    def procesar_parrafos_patios(self):
+        """
+        Esta funcion nos permitira procesar los parrafos separados por categorias, y extraer la informacion necesaria para cada una de ellas.
+        La informacion necesaria de cada categoria es la siguiente:
+        - Patio: Tension, Configuracion, numero de posiciones, conexiones, posiciones disponibles.
+        - Paño: Tension, Configuracion, numero de posiciones, conexiones, posiciones disponibles.
+        """
+        for categoria, parrafos in self.diccionario_patios.items():
+            if parrafos and categoria != "otros":
+                if categoria == "patios":
+                    for parrafo in parrafos:
+                        patio = Patio(parrafo, proyecto_padre=self)
+                        patio.procesar_patio()
+                        patio.imprimir_resumen_patio()
+
+                elif categoria == "celdas":
+                    print("Caso procesamiento celdas")
+                    pass
+
+                elif categoria == "paños":
+                    print("Caso procesamiento paños")
+
+
+
+
+        print("\n")
+
+
+
+
 
 
 

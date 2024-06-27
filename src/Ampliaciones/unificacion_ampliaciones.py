@@ -198,8 +198,6 @@ def agregar_proyecto_ampliacion(kml_file, diccionario_proyecto):
 
 
 def main():
-
-
     file = "Codigos Definitivos\plan_expansion_final_2023.pdf"
     diccionario = generar_diccionario_ampliaciones(file)
     n_total_proyectos = len(diccionario)

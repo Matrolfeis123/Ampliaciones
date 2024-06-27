@@ -211,12 +211,21 @@ def generar_diccionario_descripciones_amp(file, diccionario):
 
                 text = text.replace("\n", " ")
                 text = text.replace("  ", " ")
-                texto_limpio = re.sub(r'\d—–——–', "", text)
+                texto_limpio = re.sub(r'\d{1,2}—–——–', "", text)
                 texto_limpio = re.sub(r'—–——–', "", texto_limpio)
-
+                texto_limpio = texto_limpio.replace("  ", " ")
                 descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación", "moneda de los Estados Unidos de América")
 
+                
+
+                if titulo.strip() == "Ampliación en S/E Las Arañas (RTR ATMT)":
+                    texto_limpio = re.sub(r'\d{1,2}—–——–', "", text)
+                    texto_limpio = re.sub(r'—–——–', "", texto_limpio)
+                    texto_limpio = texto_limpio.replace("  ", " ")
+                    descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación de la obra El proyecto consiste en el aumento de capacidad de la subestación Las Arañas", "moneda de los Estados Unidos de América")
+
                 dic_descripciones[titulo] = descripcion_def
+                    
 
 
     except Exception as e:
