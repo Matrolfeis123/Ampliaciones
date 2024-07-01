@@ -6,7 +6,11 @@ import time
 import pdfplumber
 from openpyxl import Workbook
 from patio import Patio
-
+import nltk
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.corpus import stopwords
+from nltk import FreqDist
+import string
 
 ############################################################################################################
 ############################################# PROYECTO AMPLIACION ###########################################
@@ -165,7 +169,7 @@ class Proyecto_ampliacion:
 
 
         self.nombre_proyecto = titulo
-        self.indices = None
+        self.parrafos = None
         self.tipo = "Ampliación"
         self.patios = [] #a partir del resumen, podemos extraer el resumen de cada patio y extraer la informacion necesaria: Tension, Config, N_posiciones, Conexiones. Pos_disp.
         self.diccionario_patios = None
@@ -768,7 +772,7 @@ class Proyecto_ampliacion:
         print("\n")
 
 
-    def extraer_numero_posiciones_v3(self, parrafo):
+    def extraer_numero_posiciones_v3(self):
         numeros = {
             "uno": 1,
             "una": 1,
@@ -874,9 +878,91 @@ class Proyecto_ampliacion:
 
         print("\n")
 
+    def remove_stopwords(self, texto):
+        stop_words = set(stopwords.words('spanish'))
+        tokens = nltk.word_tokenize(texto)
+        tokens = [word for word in tokens if word.lower() not in stop_words]
+        tokens = [word for word in tokens if word.lower() not in string.punctuation]
+        return " ".join(tokens)
+
+    def clasificar_parrafo(self, parrafo):
+        tipo_aumento_capacidad = ["aumento capacidad", "instalación nuevo transformador", "reemplazo actual transformador"] #caso inst o const trafo
+        tipo_ampliacion_construccion = ["ampliación barra", "construcción nueva sección barra", "ampliación galpón", "ampliación patio", "construcción nueva barra", "ampliación sala celdas", "construcción nueva sala celdas", "construcción nuevo paño"] # caso ampliacion construccion patio, paño, nva barra, etc
+        tipo_otro = ["nuevos bancos condensadores", "nuevo banco condensadores", "banco autotransformadores existente nueva"]
+
+        tipo_no_interesa = ["proyecto incluye todas obras modificaciones", "respectivas bases licitación", "contempla todas tareas labores obras", "caso definirse desarrollo", " producto del aumento de capacidad antes", "Entrada operación", "Valor inversión", "C.O.M.A", "referenciales V.I", "referencial proyecto"]
+
+        tipo = "REVISAR!"
+        elemento_encontrado = None
+
+        #quizas, podria devolver directamente el elemento_encontrado y definir las listas en la otra funcion, tal que si elemento encontrado esta en la lista "tipo_aumento_capacidad", se utiliza el esquema de estilo xml correspondiente al aumento de capacidad de la s/e, y asi con los otros tipos de parrafos.
+        
+        for elemento in tipo_no_interesa:
+            if elemento in parrafo:
+                tipo = "no_interesa"
+                elemento_encontrado = elemento
+                return tipo, None
+
+        for elemento in tipo_aumento_capacidad:
+            if elemento in parrafo:
+                tipo = "construccion_instalacion_trafo"
+                elemento_encontrado = elemento
+                return tipo, elemento_encontrado
+        
+        for elemento in tipo_ampliacion_construccion:
+            if elemento in parrafo:
+                tipo = "ampliacion_construccion_patio"
+                elemento_encontrado = elemento
+                return tipo, elemento_encontrado
+        
+        for elemento in tipo_otro:
+            if elemento in parrafo:
+                tipo = "otro"
+                elemento_encontrado = elemento
+                return tipo, elemento_encontrado
+        
 
 
+        return tipo, elemento_encontrado
+    
 
+    def procesar_proyecto(self):
+        """
+        Esta funcion nos debe permitir procesar la descripcion de los proyectos, con el objetivo de extraer los siguientes atributos:
+        - Nombre del proyecto ("obra")
+        - Estado ("decreto?")
+        - Resumen del proyecto (Que hacer en el caso donde hay multiples parrafos?)
+        - Valor de inversion
+        - Entrada en operacion
+        - Condicionado a Licitacion (?)
+
+        Luego, se deben procesar los parrafos del proyecto, clasificarlos y generar el xml correspondiente al tipo de patio
+        """
+        self.resumen_proyecto = self.extraer_resumen()
+        self.valor_inversion = self.extraer_valor_inversion()
+        self.parrafos = sent_tokenize(self.texto)
+
+        for parrafo in self.parrafos:
+            parrafo_limpio = self.remove_stopwords(parrafo)
+            tipo, elemento = self.clasificar_parrafo(parrafo_limpio)
+            print(f"Tipo: {tipo}, Elemento: {elemento}")
+            print("\n")
+            
+            patio = Patio(parrafo, tipo, elemento) # Entrego el parrafo completo, no el parrafo limpio
+            
+
+
+    def procesar_descripcion(self):
+        self.indices = self.encontrar_indices_parrafos()
+        self.resumen_proyecto = self.extraer_resumen()
+        self.numero_posiciones = self.extraer_numero_posiciones_v3(self.resumen_proyecto)
+        self.entrada_operacion = self.extraer_entrada_operacion()
+        self.valor_inversion = self.extraer_valor_inversion()
+
+        self.diccionario_patios = self.separar_por_patios() # Este diccionario contiene los parrafos separados por categorias, para posteriormente procesar_parragos_patios
+        self.procesar_parrafos_patios()
+
+        self.imprimir_resumen_atributos_proyecto()
 
 
 
