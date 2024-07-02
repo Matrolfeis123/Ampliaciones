@@ -217,7 +217,6 @@ class Proyecto_ampliacion:
 
         print("\n")
         self.imprimir_resumen_atributos_proyecto()
-        print("\n")
         for patio in patios:
             patio.procesar()
             patio.imprimir_resumen()
