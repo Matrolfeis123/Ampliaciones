@@ -11,6 +11,13 @@ from unidecode import unidecode
 import simplekml
 import time
 
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
+from nltk.corpus import stopwords
+from nltk import FreqDist
+import string
+
 
 
 def generar_diccionario_proyectos_v2(file):
@@ -277,6 +284,14 @@ def extraer_parrafo_v3(descripcion, indice_inicio):
     
     else:
         return descripcion[indice_inicio:]
+
+
+def remove_stopwords(texto):
+    stop_words = set(stopwords.words('spanish'))
+    tokens = nltk.word_tokenize(texto)
+    tokens = [word for word in tokens if word.lower() not in stop_words]
+    tokens = [word for word in tokens if word.lower() not in string.punctuation]
+    return " ".join(tokens)
 
 #Vamos a crear una funcion para comprobar el contenido de las paginas asociadas a cada titulo del indice
 def imprimir_contenido_proyectos(diccionario, file):
@@ -572,7 +587,6 @@ def find_location_def(start_point, points, distance, accurracy):
     
     return p_act
 
-
 def interpolate_geodesic(point1, point2, t):
     """
     Interpolate between two geographic points.
@@ -621,8 +635,6 @@ def interpolate_geodesic(point1, point2, t):
     except ValueError as e:
         print("Error en la interpolacion geodesica: ", e)
         return None
-
-
 
 def find_two_points_enclosing_distance(start_point, line_points, distance):
     """

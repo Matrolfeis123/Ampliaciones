@@ -37,7 +37,7 @@ class Patio:
     
     def procesar_patio(self):
         self.nombre = self.extraer_tension()
-        # self.tension = self.nombre
+        self.tension = self.extraer_tension()
         # self.configuracion = self.extraer_configuracion()
         # self.posiciones = self.extraer_numero_posiciones_v3()
         # self.lista_conexiones = self.extraer_conexiones()
@@ -165,13 +165,13 @@ class Patio:
             "diez": 10
         }
 
+        # Este corresponde al caso que sean paños futuros, celdas futuras, etc
         if isinstance(self.posiciones, str):
             self.posiciones_disponibles = self.posiciones
             return ""
         
         else:
             try:
-
                 self.posiciones_disponibles = int(self.posiciones)
 
                 for conexion in self.lista_conexiones:
@@ -306,7 +306,7 @@ class Patio:
                 print(f"Error: {e}")
                 return ""
 
-class Trafos:
+class Trafo:
     def __init__(self, parrafo: str, tipo: str, elemento: str):
         self.parrafo = parrafo
         self.parrafo_limpio = None
@@ -335,12 +335,16 @@ class Trafos:
         patron_trafo_nuevo = patron_transformacion if tension_trafo_reemplazado else patron_nuevo
 
         match_nuevo = re.search(patron_trafo_nuevo, self.parrafo_limpio)
-        tension_trafo_nuevo = match_nuevo.group() if match_nuevo else None
+        tension_trafo_nuevo = match_nuevo.group().strip().replace("menos", ", Cap:") if match_nuevo else None
 
         return tension_trafo_reemplazado, tension_trafo_nuevo
             
+    def imprimir_resumen(self):
+        print(f"Tensión y capacidad del transformador a reemplazar: {self.tension_trafo_reemplazado}")
+        print(f"Tensión y capacidad del nuevo transformador: {self.tension_nvo_trafo}")
 
-class amp_barra_patio:
+
+class AmpBarraPatio:
     def __init__(self, parrafo: str, tipo: str, elemento: str):
         self.parrafo = parrafo
         self.parrafo_limpio = None
@@ -365,10 +369,11 @@ class amp_barra_patio:
     def procesar(self):
         self.parrafo_limpio = remove_stopwords(self.parrafo)
         self.tension = self.extraer_tension()
+        self.nombre = self.tension
         self.configuracion = self.extraer_configuracion()
         self.posiciones = self.extraer_numero_posiciones_v3()
-
-
+        self.lista_conexiones = self.extraer_conexiones()
+        self.posiciones_disponibles = self.calcular_posiciones_disponibles_v2()
 
     def extraer_tension(self):
         pattern = re.compile(r'(patio|sala celdas|nueva barra|sección barra|nuevo paño|ampliación barra|ampliación barras) \d+(?:,\d+)? kV', re.IGNORECASE)
@@ -376,9 +381,14 @@ class amp_barra_patio:
 
         if match:
             return match.group(0)
-        
         else:
-            return "Buscar en Informe"
+            patron_paño_nuevo = re.compile(r'nuevo paño', re.IGNORECASE)
+            match_paño_nuevo = patron_paño_nuevo.search(self.parrafo_limpio)
+            if match_paño_nuevo:
+                return match_paño_nuevo.group(0)
+            else:
+                return "Buscar en Informe"
+            
 
     def extraer_configuracion(self):
         l_config_oficial = ['barra principal seccionada y barra de transferencia', 'interruptor y medio', 'doble barra principal y barra de transferencia', 'doble barra principal con barra de transferencia', 'barra simple', 'barra principal con barra de transferencia', 'barra principal más barra auxiliar', 'barra simple seccionada', 'barra principal y barra de transferencia']
@@ -388,9 +398,7 @@ class amp_barra_patio:
                 return config
             
         return "Buscar en Informe"
-    
-        
-
+      
     def extraer_numero_posiciones_v3(self):
         numeros = {
             "uno": 1,
@@ -436,8 +444,126 @@ class amp_barra_patio:
         else:
             return "Buscar en Informe"
 
+    def extraer_conexiones(self):
+
+        def limpiar_conexion(conexion):
+        # Eliminar artículos y preposiciones iniciales
+            conexion = re.sub(r'^(el |la |los |las |del |de |a |en |para |la conexión de |la construcción de |del |un |una |)', '', conexion, flags=re.IGNORECASE).strip()
+            return conexion
+        
+        try:
+            patron_conexiones_inicio = re.compile(r'\bde manera de permitir la conexión\b(.*?)(\.\s|$)', re.IGNORECASE | re.DOTALL)
+            patron_alternativo = re.compile(r'\b(uno|1|dos|2|tres|3|cuatro|4|cinco|5) (paño|paños) para (alimentador|alimentadores)\b(.*?)(\.\s|$)', re.IGNORECASE | re.DOTALL)
 
 
+            match_conexiones_inicio = patron_conexiones_inicio.search(self.parrafo)
+            match_alternativo = patron_alternativo.search(self.parrafo)
+
+            if match_conexiones_inicio:
+                conexiones = match_conexiones_inicio.group(1).replace("y la", ",").split(",")
+                lista_conexiones = [limpiar_conexion(conexion.strip()) for conexion in conexiones]
+                return lista_conexiones
+
+            elif match_alternativo:
+                conexiones = match_alternativo.group(0).split(",")
+                lista_conexiones = [limpiar_conexion(conexion.strip()) for conexion in conexiones]
+                return lista_conexiones
+
+
+        except Exception as e:
+            print(f"Error extraccion conexiones: {e}")
+
+
+        return "Revisar manualmente, al parecer no hay conexiones en el texto."
+
+
+    def calcular_posiciones_disponibles_v2(self):
+        if isinstance(self.posiciones, str):
+            return self.posiciones
+        
+        else:
+            try:
+                posiciones_disponibles = int(self.posiciones)
+                patron = r'\b(\d+)x\d{2,3}\b' #corroborar si es necesario buscar con decimales el patron
+
+                for conexion in self.lista_conexiones:
+                    coincidencias = re.findall(patron, conexion)
+                    if coincidencias:
+                        
+                        if "nuevas líneas" not in conexion:
+                            for coincidencia in coincidencias:
+                                if "seccionamiento" in conexion:
+                                    posiciones_disponibles -= int(coincidencia[0])*2
+
+                                elif "transformador" in conexion and "banco" not in conexion:
+                                    posiciones_disponibles -= 1
+
+                                elif "paño" in conexion:
+                                    if "paño acoplador" in conexion and "paño seccionador" in conexion:
+                                        posiciones_disponibles -= 2
+
+                                    elif "paño acoplador" in conexion:
+                                        posiciones_disponibles -= 1
+
+                                    elif "paño seccionador" in conexion:
+                                        posiciones_disponibles -= 1
+
+                                    elif "un paño para la línea" in conexion:
+                                        posiciones_disponibles -= int(coincidencia[0])
+
+                                    else:
+                                        print("Revisar tipo de paño a conectar xdddd, igual resta 1")
+                                        posiciones_disponibles -= 1
+
+                                else:
+                                    posiciones_disponibles -= int(coincidencia[0])
+
+                        else:
+                            ultima_conexion = self.lista_conexiones[-1]
+
+                            if "nuevos proyectos en la zona" not in ultima_conexion:
+                                return 0
+                            
+                            else:
+                                posiciones_disponibles -= int(coincidencias[0][0])
+                                continue
+                    
+                    elif "banco" in conexion or "transformador" in conexion:
+
+                        if "bancos de autotransformadores" in conexion:
+                            print("Caso Bco Autotrafos, no dcto nada")
+                        
+                        elif "bancos" in conexion:
+                            # vamos a buscar dentro de la descripcion del proyecto padre
+                            print("Caso bancos, no dcto nada")
+
+                        elif "banco" in conexion:
+                            posiciones_disponibles -= 1
+
+                        elif "transformador" in conexion:
+                            posiciones_disponibles -= 1
+
+                        else:
+                            print("REVISAR CASO!")
+
+                    elif "normalización" in conexion:
+                        posiciones_disponibles -= 1
+
+
+                return posiciones_disponibles
+                        
+
+            except Exception as e:
+                print(f"Error calculo posiciones disponibles: {e}")
+                return ""
+
+    def imprimir_resumen(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Tensión: {self.tension}")
+        print(f"Configuración: {self.configuracion}")
+        print(f"Número de posiciones totales: {self.posiciones}")
+        print(f"Posiciones disponibles: {self.posiciones_disponibles}")
+        print(f"Conexiones: {self.lista_conexiones}")
 
 
 if __name__ == "__main__":

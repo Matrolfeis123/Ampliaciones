@@ -5,7 +5,7 @@ import re
 import time
 import pdfplumber
 from openpyxl import Workbook
-from patio import Patio
+from patio import Patio, Trafo, AmpBarraPatio
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
@@ -191,20 +191,6 @@ class Proyecto_ampliacion:
     def __str__(self):
         return f"Nombre: {self.nombre}\nTipo: {self.tipo}"
     
-
-    def procesar_descripcion(self):
-        self.indices = self.encontrar_indices_parrafos()
-        self.resumen_proyecto = self.extraer_resumen()
-        self.numero_posiciones = self.extraer_numero_posiciones_v3(self.resumen_proyecto)
-        self.entrada_operacion = self.extraer_entrada_operacion()
-        self.valor_inversion = self.extraer_valor_inversion()
-
-        self.diccionario_patios = self.separar_por_patios() # Este diccionario contiene los parrafos separados por categorias, para posteriormente procesar_parragos_patios
-        self.procesar_parrafos_patios()
-
-        self.imprimir_resumen_atributos_proyecto()
-
-
 
     def encontrar_indices_parrafos_v1(self):
         indices = []
@@ -939,30 +925,47 @@ class Proyecto_ampliacion:
         Luego, se deben procesar los parrafos del proyecto, clasificarlos y generar el xml correspondiente al tipo de patio
         """
         self.resumen_proyecto = self.extraer_resumen()
+        self.entrada_operacion = self.extraer_entrada_operacion()
         self.valor_inversion = self.extraer_valor_inversion()
         self.parrafos = sent_tokenize(self.texto)
+        patios = []
 
         for parrafo in self.parrafos:
             parrafo_limpio = self.remove_stopwords(parrafo)
             tipo, elemento = self.clasificar_parrafo(parrafo_limpio)
-            print(f"Tipo: {tipo}, Elemento: {elemento}")
-            print("\n")
-            
-            patio = Patio(parrafo, tipo, elemento) # Entrego el parrafo completo, no el parrafo limpio
-            
+            if tipo == "no_interesa":
+                pass
+
+            elif tipo == "construccion_instalacion_trafo":
+                #Los atributos procesados del trafo son:
+                # - tension_trafo_reemplazado
+                # - tension_trafo_nuevo
+                # Con eso, tenemos todo lo necesario para escribir su estructura en el XML
+                print(f"Tipo: {tipo}, Elemento: {elemento}")
+                trafo = Trafo(parrafo, tipo, elemento)
+                patios.append(trafo)
 
 
-    def procesar_descripcion(self):
-        self.indices = self.encontrar_indices_parrafos()
-        self.resumen_proyecto = self.extraer_resumen()
-        self.numero_posiciones = self.extraer_numero_posiciones_v3(self.resumen_proyecto)
-        self.entrada_operacion = self.extraer_entrada_operacion()
-        self.valor_inversion = self.extraer_valor_inversion()
+            elif tipo == "ampliacion_construccion_patio":
+                print(f"Tipo: {tipo}, Elemento: {elemento}")
+                patio = AmpBarraPatio(parrafo, tipo, elemento)
+                patios.append(patio)
 
-        self.diccionario_patios = self.separar_por_patios() # Este diccionario contiene los parrafos separados por categorias, para posteriormente procesar_parragos_patios
-        self.procesar_parrafos_patios()
+            elif tipo == "otro":
+                print(f"Tipo: {tipo}, Elemento: {elemento}")
+                # Este es el caso donde vamos a chantar el parrafo nomas en la trajeta de XML
+                print(parrafo)
+                pass         
+
+            print("\n")   
 
         self.imprimir_resumen_atributos_proyecto()
+        print("\n")
+        for patio in patios:
+            patio.procesar()
+            patio.imprimir_resumen()
+            print("\n")
+
 
 
 
