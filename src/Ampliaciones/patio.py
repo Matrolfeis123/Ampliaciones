@@ -20,6 +20,8 @@ class Patio:
         self.lista_conexiones = None
         self.posiciones_disponibles = 0
 
+        self.diccionario = None
+
 
     def __str__(self) -> str:
         return f"{self.nombre} de {self.tension} kV, con configuración {self.configuracion}. Número de posiciones: {self.posiciones_disponibles}"
@@ -67,7 +69,6 @@ class Patio:
         else:
             return "Buscar en Informe"
 
-
     def extraer_numero_posiciones_v3(self):
         numeros = {
             "uno": 1,
@@ -112,8 +113,6 @@ class Patio:
 
         else:
             return False
-
-
 
     def extraer_conexiones(self):
 
@@ -306,6 +305,7 @@ class Patio:
                 print(f"Error: {e}")
                 return ""
 
+
 class Trafo:
     def __init__(self, parrafo: str, tipo: str, elemento: str):
         self.parrafo = parrafo
@@ -316,11 +316,22 @@ class Trafo:
         # La capacidad de cada trafo esta seguido de la tension de transformacion de cada uno, luego de la palabra "menos"
         self.tension_cap_trafo_reemplazado = None
         self.tension_cap_nvo_trafo = None
+        self.capacidad_trafo_nuevo = None
 
+        self.diccionario = {}
 
     def procesar(self):
         self.parrafo_limpio = remove_stopwords(self.parrafo)
         self.tension_trafo_reemplazado, self.tension_nvo_trafo = self.extraer_tension_trafos()
+        self.diccionario = self.generar_diccionario_trafo()
+
+    def generar_diccionario_trafo(self):
+        return {
+            "tipo": self.elemento,
+            "tension_cap_trafo_reemplazado": self.tension_trafo_reemplazado,
+            "tension_cap_nvo_trafo": self.tension_nvo_trafo,
+            "capacidad_trafo_nuevo": self.capacidad_trafo_nuevo
+        }
 
 
     def extraer_tension_trafos(self):
@@ -336,6 +347,9 @@ class Trafo:
 
         match_nuevo = re.search(patron_trafo_nuevo, self.parrafo_limpio)
         tension_trafo_nuevo = match_nuevo.group().strip().replace("menos", ", Cap:") if match_nuevo else None
+
+        self.capacidad_trafo_nuevo = tension_trafo_nuevo.split(", Cap:")[1].strip() if tension_trafo_nuevo else None
+
 
         return tension_trafo_reemplazado, tension_trafo_nuevo
             
@@ -359,7 +373,6 @@ class AmpBarraPatio:
         self.lista_conexiones = None
         self.posiciones_disponibles = 0
 
-
     def __str__(self) -> str:
         return f"{self.nombre} de {self.tension} kV, con configuración {self.configuracion}. Número de posiciones: {self.posiciones_disponibles}"
     
@@ -374,6 +387,7 @@ class AmpBarraPatio:
         self.posiciones = self.extraer_numero_posiciones_v3()
         self.lista_conexiones = self.extraer_conexiones()
         self.posiciones_disponibles = self.calcular_posiciones_disponibles_v2()
+        self.diccionario = self.generar_diccionario_patio()
 
     def extraer_tension(self):
         pattern = re.compile(r'(patio|sala celdas|nueva barra|sección barra|nuevo paño|ampliación barra|ampliación barras) \d+(?:,\d+)? kV', re.IGNORECASE)
@@ -389,7 +403,6 @@ class AmpBarraPatio:
             else:
                 return "Buscar en Informe"
             
-
     def extraer_configuracion(self):
         l_config_oficial = ['barra principal seccionada y barra de transferencia', 'interruptor y medio', 'doble barra principal y barra de transferencia', 'doble barra principal con barra de transferencia', 'barra simple', 'barra principal con barra de transferencia', 'barra principal más barra auxiliar', 'barra simple seccionada', 'barra principal y barra de transferencia']
 
@@ -475,7 +488,6 @@ class AmpBarraPatio:
 
 
         return "Revisar manualmente, al parecer no hay conexiones en el texto."
-
 
     def calcular_posiciones_disponibles_v2(self):
         if isinstance(self.posiciones, str):
@@ -565,6 +577,15 @@ class AmpBarraPatio:
         print(f"Posiciones disponibles: {self.posiciones_disponibles}")
         print(f"Conexiones: {self.lista_conexiones}")
 
+    def generar_diccionario_patio(self):
+        return {
+            "tipo": self.elemento,
+            "tension": self.tension,
+            "configuracion": self.configuracion,
+            "posiciones": self.posiciones,
+            "conexiones": self.lista_conexiones,
+            "posiciones_disponibles": self.posiciones_disponibles           
+        }
 
 if __name__ == "__main__":
     texto = 'Además, el proyecto considera la construcción de un patio de 13,8 kV, en configuración barra simple, contemplándose la construcción de, al menos, cuatro paños para alimentadores, el paño de conexión para el transformador de poder 110/13,8 kV antes mencionado y espacio en barra y plataforma para la construcción de dos paños futuros.'

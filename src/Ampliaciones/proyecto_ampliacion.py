@@ -55,11 +55,14 @@ class Proyecto_ampliacion:
 
         self.numero_posiciones = None
         self.patios = [] #??
-        self.lista_conexiones = []
         self.posiciones_disponibles = "No procesed"
 
         self.resumen_proyecto = ""
         self.decreto =  "PET Final 2023"
+
+        self.diccionario_patios = {}
+        self.diccionario_trafos = {}
+        self.diccionario_otros = {}
 
 
     def __str__(self):
@@ -130,7 +133,7 @@ class Proyecto_ampliacion:
         return " ".join(tokens)
 
     def clasificar_parrafo(self, parrafo):
-        tipo_aumento_capacidad = ["aumento capacidad", "instalación nuevo transformador", "reemplazo actual transformador"] #caso inst o const trafo
+        tipo_aumento_capacidad = ["instalación nuevo transformador", "reemplazo actual transformador"] #caso inst o const trafo
         tipo_ampliacion_construccion = ["ampliación barra", "construcción nueva sección barra", "ampliación galpón", "ampliación patio", "construcción nueva barra", "ampliación sala celdas", "construcción nueva sala celdas", "construcción nuevo paño"] # caso ampliacion construccion patio, paño, nva barra, etc
         tipo_otro = ["nuevos bancos condensadores", "nuevo banco condensadores", "banco autotransformadores existente nueva"]
 
@@ -187,6 +190,9 @@ class Proyecto_ampliacion:
         self.valor_inversion = self.extraer_valor_inversion()
         self.parrafos = sent_tokenize(self.texto)
         patios = []
+        trafos = []
+        otros = []
+
 
         for parrafo in self.parrafos:
             parrafo_limpio = self.remove_stopwords(parrafo)
@@ -199,28 +205,57 @@ class Proyecto_ampliacion:
                 # - tension_trafo_reemplazado
                 # - tension_trafo_nuevo
                 # Con eso, tenemos todo lo necesario para escribir su estructura en el XML
-                print(f"Tipo: {tipo}, Elemento: {elemento}")
                 trafo = Trafo(parrafo, tipo, elemento)
-                patios.append(trafo)
+                trafo.procesar()
+                trafos.append(trafo)
 
 
             elif tipo == "ampliacion_construccion_patio":
-                print(f"Tipo: {tipo}, Elemento: {elemento}")
                 patio = AmpBarraPatio(parrafo, tipo, elemento)
+                patio.procesar()
                 patios.append(patio)
 
             elif tipo == "otro":
-                print(f"Tipo: {tipo}, Elemento: {elemento}")
                 # Este es el caso donde vamos a chantar el parrafo nomas en la trajeta de XML
-                print(parrafo)
+                otros.append(parrafo)
                 pass         
 
-        print("\n")
         self.imprimir_resumen_atributos_proyecto()
-        for patio in patios:
+        for patio in patios: #la listapatios tiene los distintos tipos de proyectos (patio, trafo, otros)
             patio.procesar()
-            patio.imprimir_resumen()
-            print("\n")
+            #patio.imprimir_resumen()
+            self.diccionario_patios[patio.nombre] = patio.diccionario
+
+        
+        i_traf = 0
+        for trafo in trafos:
+            trafo.procesar()
+            #trafo.imprimir_resumen()
+            nombre_trafo = f"trafo_{i_traf}"
+            self.diccionario_trafos[nombre_trafo] = trafo.diccionario
+            i_traf += 1
 
 
 
+        for otro in otros:
+            self.diccionario_otros["parrafo"] = otro
+
+
+        self.resultado = {"patios": len(patios), "trafos": len(trafos), "otros": len(otros)}
+
+        self.generar_diccionario_proyecto()
+
+    def generar_diccionario_proyecto(self):
+        self.diccionario_proyecto = {
+            "obra": self.nombre_proyecto,
+            "decreto": self.decreto,
+            "tipo": self.tipo,
+            "vi": self.valor_inversion,
+            "entrada_op": self.entrada_operacion,
+            "resumen": self.resumen_proyecto,
+            "patios": self.diccionario_patios,
+            "trafos": self.diccionario_trafos,
+            "otros": self.diccionario_otros}
+        
+        return self.diccionario_proyecto
+        

@@ -1,0 +1,702 @@
+<ns0:kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns:ns1="http://www.google.com/kml/ext/2.2">
+    <ns0:Document>
+        <ns0:name>doc_trinergy.kml</ns0:name>
+
+        <ns0:Schema name="Ampli" id="Ampli">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="POSICIONES">
+                <ns0:displayName>POSICIONES</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_200" id="Amp_200">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Ampli1" id="Ampli1">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="POSICIONES">
+                <ns0:displayName>POSICIONES</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ESTADO">
+                <ns0:displayName>ESTADO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="VI">
+                <ns0:displayName>V.I</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:StyleMap id="Ampli0">
+            <ns0:Pair>
+                <ns0:key>normal</ns0:key>
+                <ns0:styleUrl>#fol_ampli0</ns0:styleUrl>
+            </ns0:Pair>
+            <ns0:Pair>
+                <ns0:key>highlight</ns0:key>
+                <ns0:styleUrl>#map_ampli0</ns0:styleUrl>
+            </ns0:Pair>
+        </ns0:StyleMap>
+        <ns0:StyleMap id="Ampliacion0">
+            <ns0:Pair>
+                <ns0:key>normal</ns0:key>
+                <ns0:styleUrl>#fol_ampliacion0</ns0:styleUrl>
+            </ns0:Pair>
+            <ns0:Pair>
+                <ns0:key>highlight</ns0:key>
+                <ns0:styleUrl>#map_ampliacion0</ns0:styleUrl>
+            </ns0:Pair>
+        </ns0:StyleMap>
+        <ns0:StyleMap id="ONva0">
+            <ns0:Pair>
+                <ns0:key>normal</ns0:key>
+                <ns0:styleUrl>#fol_ONva0</ns0:styleUrl>
+            </ns0:Pair>
+            <ns0:Pair>
+                <ns0:key>highlight</ns0:key>
+                <ns0:styleUrl>#fol_ONva0</ns0:styleUrl>
+            </ns0:Pair>
+        </ns0:StyleMap>
+        <ns0:StyleMap id="ONva1">
+            <ns0:Pair>
+                <ns0:key>normal</ns0:key>
+                <ns0:styleUrl>#fol_ONva1</ns0:styleUrl>
+            </ns0:Pair>
+            <ns0:Pair>
+                <ns0:key>highlight</ns0:key>
+                <ns0:styleUrl>#fol_ONva1</ns0:styleUrl>
+            </ns0:Pair>
+        </ns0:StyleMap>
+        <ns0:StyleMap id="ONva2">
+            <ns0:Pair>
+                <ns0:key>normal</ns0:key>
+                <ns0:styleUrl>#fol_ONva2</ns0:styleUrl>
+            </ns0:Pair>
+            <ns0:Pair>
+                <ns0:key>highlight</ns0:key>
+                <ns0:styleUrl>#fol_ONva2</ns0:styleUrl>
+            </ns0:Pair>
+        </ns0:StyleMap>
+        <ns0:Style id="fol_ONva0">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="left"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[ONva/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="fol_ONva1">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[ONva_din/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensi&#243;n&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Pos_Disp&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;!-- Informaci&#243;n del primer patio --&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[ONva_din/patio_tension]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[ONva_din/patio_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[ONva_din/patio_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="fol_ONva2">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[ONva_din2/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensi&#243;n&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Pos_Disp&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;!-- Informaci&#243;n del primer patio --&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[ONva_din2/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[ONva_din2/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[ONva_din2/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[ONva_din2/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[ONva_din2/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[ONva_din2/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="fol_ampli0">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="left"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACION DE S/E EXISTENTE&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Posiciones&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/POSICIONES]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;&lt;div
+                    style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;$[Ampli/RESUMEN]&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
+                    summary=""&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="fol_ampli1">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="left"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACION DE S/E EXISTENTE&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Posiciones&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/POSICIONES]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Op.&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/ESTADO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;V.I&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;&lt;div
+                    style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;$[Ampli1/RESUMEN]&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
+                    summary=""&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="fol_ampliacion0">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
+                    &lt;tr&gt;&lt;td width="100%" valign="middle" align="left"&gt;&lt;img
+                    src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;&lt;td width="100%" valign="middle" align="center"
+                    bgcolor=#8bb145&gt;&lt;b&gt;&lt;font face="Arial"
+                    color="#ffffff"&gt;&lt;h2.5&gt;AMPLIACION DE S/E
+                    EXISTENTE&lt;/h2.5&gt;&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo de
+                    Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Sale de
+                    Servicio&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/SALIDA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entra en
+                    Servicio&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/ENTRADA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Estado de
+                    Licitacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/ESTADO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
+                    summary=""&gt;
+                    &lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_200">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_200/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+
+        <ns0:Folder>
+            <ns0:name>Ampliaciones</ns0:name>
+            <ns0:open>1</ns0:open>
+            <ns0:Placemark>
+                <ns0:name>Ampliacion 1</ns0:name>
+                <ns0:styleUrl>#Ampliacion0</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Ampliacion0">
+                        <ns0:SimpleData name="OBRA">Ampliacion 1</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">D-1</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliacion</ns0:SimpleData>
+                        <ns0:SimpleData name="SALIDA">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="ESTADO">En Licitacion</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliacion 2</ns0:name>
+                <ns0:styleUrl>#Ampliacion0</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Ampliacion0">
+                        <ns0:SimpleData name="OBRA">Ampliacion 2</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">D-2</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliacion</ns0:SimpleData>
+                        <ns0:SimpleData name="SALIDA">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="ESTADO">En Licitacion</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampli_200</ns0:name>
+                <ns0:styleUrl>#Amp_200</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_200">
+                        <ns0:SimpleData name="OBRA">
+                            Subestación de Prueba
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">
+                            1234/2023
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">
+                            Transformador
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="VI">
+                            1000000
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">
+                            2024
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">
+                            Este es un resumen de la subestación de prueba para verificar
+                            el
+                            estilo y esquema.
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">
+                            Transformador
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">
+                            230 kV
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">
+                            1x110
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">
+                            Conexión 1
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">
+                            5
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">
+                            115 kV
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">
+                            Conexión 2
+                        </ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">
+                            3
+                        </ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-73.935242,40.730610</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+        </ns0:Folder>
+        <ns0:Folder>
+            <ns0:name>Obras nuevas</ns0:name>
+            <ns0:open>1</ns0:open>
+            <ns0:Placemark>
+                <ns0:name>Obra nueva 1</ns0:name>
+                <ns0:styleUrl>#ONva0</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#ONva0">
+                        <ns0:SimpleData name="OBRA">Obra nueva 1</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">D-1</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Obra nueva</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1000000</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">Resumen de
+                            la obra nueva 1</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Obra nueva 2</ns0:name>
+                <ns0:styleUrl>#ONva1</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#ONva1">
+                        <ns0:SimpleData name="OBRA">Obra nueva 2</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">D-2</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Obra nueva</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">2000000</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">2012-01-01</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">Resumen de
+                            la obra nueva 2</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+        </ns0:Folder>
+
+    </ns0:Document>
+</ns0:kml>

@@ -151,6 +151,7 @@ def agregar_proyecto_ampliacion(kml_file, diccionario_proyecto):
 
                 # Agregar el estilo del Placemark
                 style_url = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}styleUrl")
+                
                 style_url.text = "#Ampli0"
 
                 # Agregar los datos extendidos del Placemark
