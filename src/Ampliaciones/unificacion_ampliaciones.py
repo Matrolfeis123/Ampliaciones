@@ -198,6 +198,113 @@ def agregar_proyecto_ampliacion(kml_file, diccionario_proyecto):
         return
 
 
+def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquema):
+    try:
+        #parsear el archivo kml
+        tree = ET.parse(kml_file)
+        root = tree.getroot()
+
+    except ET.ParseError as e:
+        print("Error al parsear el archivo KML: ", e)
+        return
+    
+    except FileNotFoundError as e:
+        print("Error al abrir el archivo KML: ", e)
+        return
+    
+    except Exception as e:
+        print("Error inesperado: ", e)
+        return
+    
+    ns = {'kml': 'http://www.opengis.net/kml/2.2'}
+
+    try:
+        # Buscar la carpeta de ampliaciones, denominada: "Ampliaciones a S/E"
+        folders = root.findall(".//kml:Folder", ns)
+        target_folder = None
+
+        for folder in folders:
+            name = folder.find("kml:name", ns).text
+            if name == "Pruebas Desarrollo PET":
+                target_folder = folder
+                # Crear un nuevo placemark
+                placemark = ET.SubElement(folder, "{http://www.opengis.net/kml/2.2}Placemark")
+
+                # Crear un nombre para el placemark
+                name = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}name")
+                name.text = diccionario_proyecto["obra"]
+
+                # Agregar el estilo del Placemark
+                style_url = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}styleUrl")
+                style_url.text = f"#{nombre_esquema}"
+
+                # Agregar los datos extendidos del Placemark
+                extended_data = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}ExtendedData")
+                schema_data = ET.SubElement(extended_data, "{http://www.opengis.net/kml/2.2}SchemaData", schemaUrl=f"#{nombre_esquema}")
+
+                simple_data_list = [
+                    ("OBRA", diccionario_proyecto["obra"]),
+                    ("DECRETO", diccionario_proyecto["decreto"]),
+                    ("TIPO", diccionario_proyecto["tipo"]),
+                    ("VI", diccionario_proyecto["vi"]),
+                    ("ENTRADA_OP", diccionario_proyecto["entrada_op"]),
+                    ("RESUMEN", diccionario_proyecto["resumen"] if diccionario_proyecto["resumen"] else "N/A")
+                ]
+
+                largo_nombre_esquema = len(nombre_esquema)
+                n_patios = int(nombre_esquema[largo_nombre_esquema - 3])
+                n_trafos = int(nombre_esquema[largo_nombre_esquema - 2])
+                n_otros = int(nombre_esquema[largo_nombre_esquema - 1])
+
+                for i in range(n_patios):
+                    simple_data_list.extend([
+                        (f"patio{i+1}_tipo", diccionario_proyecto.get(f"patio{i+1}_tipo", "N/A")),
+                        (f"patio{i+1}_tension", diccionario_proyecto.get(f"patio{i+1}_tension", "N/A")),
+                        (f"patio{i+1}_configuracion", diccionario_proyecto.get(f"patio{i+1}_configuracion", "N/A")),
+                        (f"patio{i+1}_conexiones", diccionario_proyecto.get(f"patio{i+1}_conexiones", "N/A")),
+                        (f"patio{i+1}_posiciones_disponibles", diccionario_proyecto.get(f"patio{i+1}_posiciones_disponibles", "N/A"))
+                    ])
+
+                for i in range(n_trafos):
+                    simple_data_list.extend([
+                        (f"trafo{i+1}_tipo", diccionario_proyecto.get(f"trafo{i+1}_tipo", "N/A")),
+                        (f"trafo{i+1}_tension_trafo_reemplazado", diccionario_proyecto.get(f"trafo{i+1}_tension_trafo_reemplazado", "N/A")),
+                        (f"trafo{i+1}_tension_trafo_nvo", diccionario_proyecto.get(f"trafo{i+1}_tension_trafo_nvo", "N/A")),
+                        (f"trafo{i+1}_Capacidad", diccionario_proyecto.get(f"trafo{i+1}_Capacidad", "N/A"))
+                    ])
+
+                for i in range(n_otros):
+                    simple_data_list.append((f"parrafo{i+1}", diccionario_proyecto.get(f"parrafo{i+1}", "N/A")))
+
+                for key, value in simple_data_list:
+                    data = ET.SubElement(schema_data, "{http://www.opengis.net/kml/2.2}SimpleData", {"name": key})
+                    data.text = str(value)
+
+                # Agregar las coordenadas del placemark
+                point = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}Point")
+                coordinates = ET.SubElement(point, "{http://www.opengis.net/kml/2.2}coordinates")
+                coordinates.text = "-49.129324, 15.854966, 0"
+
+                try:
+                    tree.write(kml_file, encoding="utf-8", xml_declaration=True)
+                except Exception as e:
+                    print("Error al escribir el archivo KML: ", e)
+
+        if not target_folder:
+            raise KeyError("No se encontró la carpeta de ampliaciones")
+            
+    except KeyError as e:
+        print(f"Clave faltante en diccionario_proyecto: {e}")
+        return
+
+    except Exception as e:
+        print("Error inesperado: ", e)
+        return
+
+
+
+
+
 def main():
     file = "Codigos Definitivos\plan_expansion_final_2023.pdf"
     diccionario = generar_diccionario_ampliaciones(file)

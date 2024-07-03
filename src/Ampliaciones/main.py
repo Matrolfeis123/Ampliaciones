@@ -37,6 +37,8 @@ def main():
             proyecto.procesar_proyecto()
             conteo_casos.append(proyecto.resultado)
             lista_proyectos.append(proyecto.diccionario_proyecto)
+            print(proyecto.diccionario_proyecto)
+            breakpoint()
 
             # Desde aca, puedo armar el diccionario de salida con los datos del proyecto
         

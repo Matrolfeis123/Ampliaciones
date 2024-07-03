@@ -224,10 +224,13 @@ class Proyecto_ampliacion:
         for patio in patios: #la listapatios tiene los distintos tipos de proyectos (patio, trafo, otros)
             patio.procesar()
             #patio.imprimir_resumen()
-            self.diccionario_patios[patio.nombre] = patio.diccionario
+            nombre_patio = f"patio{patios.index(patio)+1}"
+            print(nombre_patio)
+            breakpoint()
+            self.diccionario_patios[nombre_patio] = patio.diccionario
 
         
-        i_traf = 0
+        i_traf = 1
         for trafo in trafos:
             trafo.procesar()
             #trafo.imprimir_resumen()
