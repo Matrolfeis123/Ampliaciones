@@ -2,25 +2,6 @@
 <ns0:kml xmlns:ns0="http://www.opengis.net/kml/2.2">
     <ns0:Document>
         <ns0:name>doc_trinergy.kml</ns0:name>
-
-        <ns0:Schema name="Ampli" id="Ampli">
-            <ns0:SimpleField type="string" name="OBRA">
-                <ns0:displayName>OBRA</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="DECRETO">
-                <ns0:displayName>DECRETO</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="TIPO">
-                <ns0:displayName>TIPO</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="double" name="POSICIONES">
-                <ns0:displayName>POSICIONES</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="RESUMEN">
-                <ns0:displayName>RESUMEN</ns0:displayName>
-            </ns0:SimpleField>
-        </ns0:Schema>
-
         <ns0:Schema name="Amp_211" id="Amp_211">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -86,8 +67,6 @@
                 <ns0:displayName>parrafo1</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_101" id="Amp_101">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -126,8 +105,6 @@
                 <ns0:displayName>parrafo1</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_110" id="Amp_110">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -175,8 +152,6 @@
                 <ns0:displayName>trafo1_Capacidad</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_210" id="Amp_210">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -239,8 +214,6 @@
                 <ns0:displayName>trafo1_Capacidad</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_310" id="Amp_310">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -318,8 +291,6 @@
                 <ns0:displayName>trafo1_Capacidad</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_100" id="Amp_100">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -355,8 +326,6 @@
                 <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-
-
         <ns0:Schema name="Amp_200" id="Amp_200">
             <ns0:SimpleField type="string" name="OBRA">
                 <ns0:displayName>OBRA</ns0:displayName>
@@ -407,417 +376,6 @@
                 <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
             </ns0:SimpleField>
         </ns0:Schema>
-        <ns0:Schema name="Ampli1" id="Ampli1">
-            <ns0:SimpleField type="string" name="OBRA">
-                <ns0:displayName>OBRA</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="DECRETO">
-                <ns0:displayName>DECRETO</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="TIPO">
-                <ns0:displayName>TIPO</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="double" name="POSICIONES">
-                <ns0:displayName>POSICIONES</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="ESTADO">
-                <ns0:displayName>ESTADO</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="VI">
-                <ns0:displayName>V.I</ns0:displayName>
-            </ns0:SimpleField>
-            <ns0:SimpleField type="string" name="RESUMEN">
-                <ns0:displayName>RESUMEN</ns0:displayName>
-            </ns0:SimpleField>
-        </ns0:Schema>
-        <ns0:StyleMap id="Ampli0">
-            <ns0:Pair>
-                <ns0:key>normal</ns0:key>
-                <ns0:styleUrl>#fol_ampli0</ns0:styleUrl>
-            </ns0:Pair>
-            <ns0:Pair>
-                <ns0:key>highlight</ns0:key>
-                <ns0:styleUrl>#map_ampli0</ns0:styleUrl>
-            </ns0:Pair>
-        </ns0:StyleMap>
-        <ns0:StyleMap id="Ampliacion0">
-            <ns0:Pair>
-                <ns0:key>normal</ns0:key>
-                <ns0:styleUrl>#fol_ampliacion0</ns0:styleUrl>
-            </ns0:Pair>
-            <ns0:Pair>
-                <ns0:key>highlight</ns0:key>
-                <ns0:styleUrl>#map_ampliacion0</ns0:styleUrl>
-            </ns0:Pair>
-        </ns0:StyleMap>
-        <ns0:StyleMap id="ONva0">
-            <ns0:Pair>
-                <ns0:key>normal</ns0:key>
-                <ns0:styleUrl>#fol_ONva0</ns0:styleUrl>
-            </ns0:Pair>
-            <ns0:Pair>
-                <ns0:key>highlight</ns0:key>
-                <ns0:styleUrl>#fol_ONva0</ns0:styleUrl>
-            </ns0:Pair>
-        </ns0:StyleMap>
-        <ns0:StyleMap id="ONva1">
-            <ns0:Pair>
-                <ns0:key>normal</ns0:key>
-                <ns0:styleUrl>#fol_ONva1</ns0:styleUrl>
-            </ns0:Pair>
-            <ns0:Pair>
-                <ns0:key>highlight</ns0:key>
-                <ns0:styleUrl>#fol_ONva1</ns0:styleUrl>
-            </ns0:Pair>
-        </ns0:StyleMap>
-        <ns0:StyleMap id="ONva2">
-            <ns0:Pair>
-                <ns0:key>normal</ns0:key>
-                <ns0:styleUrl>#fol_ONva2</ns0:styleUrl>
-            </ns0:Pair>
-            <ns0:Pair>
-                <ns0:key>highlight</ns0:key>
-                <ns0:styleUrl>#fol_ONva2</ns0:styleUrl>
-            </ns0:Pair>
-        </ns0:StyleMap>
-        <ns0:Style id="fol_ONva0">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
-                    &lt;tr&gt;
-                    &lt;td width="100%" valign="middle" align="left"&gt;
-                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;
-                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
-                    &lt;b&gt;
-                    &lt;font face="Arial" color="#ffffff"&gt;
-                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
-                    &lt;/font&gt;
-                    &lt;/b&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
-                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/VI]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
-                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;
-                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
-                    text-align: justify;"&gt;
-                    $[ONva/RESUMEN]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
-        <ns0:Style id="fol_ONva1">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
-                    &lt;tr&gt;
-                    &lt;td width="100%" valign="middle" align="center"&gt;
-                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;
-                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
-                    &lt;b&gt;
-                    &lt;font face="Arial" color="#ffffff"&gt;
-                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
-                    &lt;/font&gt;
-                    &lt;/b&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
-                    width:auto;"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
-                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/VI]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
-                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;
-                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
-                    text-align: justify;"&gt;
-                    $[ONva_din/RESUMEN]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
-                    style="margin-top: 10px; text-align: center;"&gt;
-                    &lt;tr&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Pos_Disp&lt;/th&gt;
-                    &lt;/tr&gt;
-                    &lt;!-- Información del primer patio --&gt;
-                    &lt;tr&gt;
-                    &lt;td&gt;$[ONva_din/patio_tension]&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="overflow: auto; text-align: justify"&gt;
-                    $[ONva_din/patio_conexiones]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;td&gt;$[ONva_din/patio_posiciones_disponibles]&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
-        <ns0:Style id="fol_ONva2">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
-                    &lt;tr&gt;
-                    &lt;td width="100%" valign="middle" align="center"&gt;
-                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;
-                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
-                    &lt;b&gt;
-                    &lt;font face="Arial" color="#ffffff"&gt;
-                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
-                    &lt;/font&gt;
-                    &lt;/b&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
-                    width:auto;"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
-                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/VI]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
-                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[ONva_din2/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;
-                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
-                    text-align: justify;"&gt;
-                    $[ONva_din2/RESUMEN]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
-                    style="margin-top: 10px; text-align: center;"&gt;
-                    &lt;tr&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
-                    &lt;th bgcolor="#AAAAAA"&gt;Pos_Disp&lt;/th&gt;
-                    &lt;/tr&gt;
-                    &lt;!-- Información del primer patio --&gt;
-                    &lt;tr&gt;
-                    &lt;td&gt;$[ONva_din2/patio1_tension]&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="overflow: auto; text-align: justify"&gt;
-                    $[ONva_din2/patio1_conexiones]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;td&gt;$[ONva_din2/patio1_posiciones_disponibles]&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                    &lt;td&gt;$[ONva_din2/patio2_tension]&lt;/td&gt;
-                    &lt;td&gt;
-                    &lt;div style="overflow: auto; text-align: justify"&gt;
-                    $[ONva_din2/patio2_conexiones]
-                    &lt;/div&gt;
-                    &lt;/td&gt;
-                    &lt;td&gt;$[ONva_din2/patio2_posiciones_disponibles]&lt;/td&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
-        <ns0:Style id="fol_ampli0">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
-                    &lt;tr&gt;
-                    &lt;td width="100%" valign="middle" align="left"&gt;
-                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;
-                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
-                    &lt;b&gt;
-                    &lt;font face="Arial" color="#ffffff"&gt;
-                    &lt;h2.5&gt;AMPLIACION DE S/E EXISTENTE&lt;/h2.5&gt;
-                    &lt;/font&gt;
-                    &lt;/b&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Posiciones&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli/POSICIONES]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;&lt;div
-                    style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
-                    text-align: justify;"&gt;$[Ampli/RESUMEN]&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
-                    summary=""&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
-        <ns0:Style id="fol_ampli1">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
-                    &lt;tr&gt;
-                    &lt;td width="100%" valign="middle" align="left"&gt;
-                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;
-                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
-                    &lt;b&gt;
-                    &lt;font face="Arial" color="#ffffff"&gt;
-                    &lt;h2.5&gt;AMPLIACION DE S/E EXISTENTE&lt;/h2.5&gt;
-                    &lt;/font&gt;
-                    &lt;/b&gt;
-                    &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Posiciones&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/POSICIONES]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
-                    Op.&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/ESTADO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;V.I&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampli1/VI]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;&lt;div
-                    style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
-                    text-align: justify;"&gt;$[Ampli1/RESUMEN]&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
-                    summary=""&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
-        <ns0:Style id="fol_ampliacion0">
-            <ns0:IconStyle>
-                <ns0:scale>1.16667</ns0:scale>
-                <ns0:Icon>
-                    <ns0:href>files/add_9.png</ns0:href>
-                </ns0:Icon>
-            </ns0:IconStyle>
-            <ns0:LabelStyle>
-                <ns0:color>00ffffff</ns0:color>
-            </ns0:LabelStyle>
-            <ns0:BalloonStyle>
-                <ns0:text>&lt;table WIDTH="300" border=0 cellpadding=0 cellspacing=1 summary=""&gt;
-                    &lt;tr&gt;&lt;td width="100%" valign="middle" align="left"&gt;&lt;img
-                    src="files/trinergy_13.jpg" border="0" width="240" height="90"
-                    alt=""&gt;&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr cellpadding=1&gt;&lt;td width="100%" valign="middle" align="center"
-                    bgcolor=#8bb145&gt;&lt;b&gt;&lt;font face="Arial"
-                    color="#ffffff"&gt;&lt;h2.5&gt;AMPLIACION DE S/E
-                    EXISTENTE&lt;/h2.5&gt;&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table border="1" padding="0"&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/OBRA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td
-                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/DECRETO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo de
-                    Obra&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/TIPO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Sale de
-                    Servicio&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/SALIDA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entra en
-                    Servicio&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/ENTRADA]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Estado de
-                    Licitacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Ampliacion/ESTADO]&lt;/td&gt;&lt;/tr&gt;
-                    &lt;/tr&gt;
-                    &lt;/table&gt;
-                    &lt;table WIDTH="200" border=0 cellpadding=1 cellspacing=1 bgcolor=#F3E2A9
-                    summary=""&gt;
-                    &lt;/table&gt;</ns0:text>
-            </ns0:BalloonStyle>
-        </ns0:Style>
         <ns0:Style id="Amp_200">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -901,7 +459,6 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
         <ns0:Style id="Amp_211">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -952,7 +509,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1001,8 +557,6 @@
                     justify;"&gt;&lt;p&gt;$[Amp_211/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_101">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1053,7 +607,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1077,8 +630,6 @@
                     justify;"&gt;&lt;p&gt;$[Amp_101/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_110">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1129,7 +680,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1166,8 +716,6 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_210">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1218,7 +766,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1266,8 +813,6 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_310">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1318,7 +863,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1377,8 +921,6 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_100">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1429,7 +971,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1452,8 +993,6 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Style id="Amp_200">
             <ns0:IconStyle>
                 <ns0:scale>1.16667</ns0:scale>
@@ -1504,7 +1043,6 @@
                     &lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;/table&gt;
-
                     &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
                     style="margin-top: 10px; text-align: center;"&gt;
                     &lt;tr&gt;
@@ -1538,101 +1076,10 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Folder>
             <ns0:name>Ampliaciones</ns0:name>
             <ns0:open>1</ns0:open>
             <ns0:Placemark>
-                <ns0:name>Ampliacion 1</ns0:name>
-                <ns0:styleUrl>#Ampliacion0</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Ampliacion0">
-                        <ns0:SimpleData name="OBRA">Ampliacion 1</ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">D-1</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliacion</ns0:SimpleData>
-                        <ns0:SimpleData name="SALIDA">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="ESTADO">En Licitacion</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliacion 2</ns0:name>
-                <ns0:styleUrl>#Ampliacion0</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Ampliacion0">
-                        <ns0:SimpleData name="OBRA">Ampliacion 2</ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">D-2</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliacion</ns0:SimpleData>
-                        <ns0:SimpleData name="SALIDA">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="ESTADO">En Licitacion</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampli_200</ns0:name>
-                <ns0:styleUrl>#Amp_200</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_200">
-                        <ns0:SimpleData name="OBRA">
-                            Subestación de Prueba
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">
-                            1234/2023
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">
-                            Transformador
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="VI">
-                            1000000
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">
-                            2024
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">
-                            Este es un resumen de la subestación de prueba para verificar
-                            el
-                            estilo y esquema.
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">
-                            Transformador
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">
-                            230 kV
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">
-                            1x110
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">
-                            Conexión 1
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">
-                            5
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio2_tension">
-                            115 kV
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio2_conexiones">
-                            Conexión 2
-                        </ns0:SimpleData>
-                        <ns0:SimpleData name="patio2_posiciones_disponibles">
-                            3
-                        </ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-73.935242,40.730610</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
                 <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
                 <ns0:styleUrl>#Amp_100</ns0:styleUrl>
                 <ns0:ExtendedData>
@@ -1660,236 +1107,579 @@
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
+                    <ns0:coordinates>-70.0794108,-20.24832586, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
+                <ns0:name>Ampliación en S/E Nueva Maitencillo 220 kV (IM) </ns0:name>
                 <ns0:styleUrl>#Amp_100</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Maitencillo 220 kV (IM) </ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.880.310 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación del
+                            galpón e instalaciones comunes del patio de 220 kV de la subestación
+                            Nueva Maitencillo, cuya configuración corresponde a interruptor y medio,
+                            para cuatro nuevas diagonales, de manera de permitir la conexión de
+                            nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación galpón</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">8</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.928938,-28.54294, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Mejillones 110 kV (BS) </ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mejillones 110 kV (BS) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.509.964 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de la
+                            barra principal e instalaciones comunes del patio de 110 kV de la
+                            subestación Mejillones, cuya configuración corresponde a barra simple,
+                            para dos nuevas posiciones, de manera de permitir la conexión de la obra
+                            “Nueva S/E La Chimba y nueva línea 2x110 kV Mejillones – La Chimba”.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E La Chimba y
+                            nueva línea 2x110 kV Mejillones – La Chimba”.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.419211,-23.095244, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Nueva Cardones 220 kV (IM) </ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Cardones 220 kV (IM) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.896.506 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación del
+                            galpón e instalaciones comunes del patio de 220 kV de la subestación
+                            Nueva Cardones, cuya configuración corresponde a interruptor y medio,
+                            para cuatro nuevas diagonales, de manera de permitir la conexión de
+                            nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación galpón</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">8</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.42598,-27.518674, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Rahue 220 kV (BPS+BT) </ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Rahue 220 kV (BPS+BT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.895.475 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras principales e instalaciones comunes del patio de 220 kV de la
+                            subestación Rahue, cuya configuración corresponde a barra principal
+                            seccionada y barra de transferencia, para dos nuevas posiciones, de
+                            manera de permitir la conexión de nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal seccionada y
+                            barra de transferencia</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-73.08532,-40.573839, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Guardiamarina 110 kV (2BP+BT) </ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Guardiamarina 110 kV (2BP+BT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.854.596 dólares</ns0:SimpleData>
                         <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
                             siguientes a la fecha de publicación en el Diario Oficial del respectivo
                             decreto</ns0:SimpleData>
                         <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
                             barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
+                            Guardiamarina, cuya configuración corresponde a doble barra principal y
+                            barra de transferencia, para dos nuevas posiciones, de manera de
+                            permitir la conexión de la obra “Nueva S/E Caracoles, nuevas líneas
+                            2x220 kV Caracoles – Liqcau y 2x110 kV Guardiamarina – Caracoles”.</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
+                        <ns0:SimpleData name="patio1_configuracion">doble barra principal y barra de
                             transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Caracoles',
+                            'nuevas líneas 2x220 kV Caracoles – Liqcau y 2x110 kV Guardiamarina –
+                            Caracoles”.']</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
+                    <ns0:coordinates>-70.3733527240216,-23.5912623496396, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:name>Ampliación en S/E Macul (NTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_110</ns0:styleUrl>
                 <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
+                    <ns0:SchemaData schemaUrl="#Amp_110">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Macul (NTR ATMT) </ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                        <ns0:SimpleData name="VI">4.784.001 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
                             siguientes a la fecha de publicación en el Diario Oficial del respectivo
                             decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
-                            transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Macul mediante la instalación de un nuevo
+                            transformador 110/12 kV y al menos 50 MVA de capacidad con Cambiador de
+                            Derivación Bajo Carga (CDBC), y sus respectivos paños de conexión en
+                            ambos niveles de tensión. Adicionalmente, el proyecto considera la
+                            construcción de una nueva sección de barra de 12 kV, en configuración
+                            barra principal más barra auxiliar, contemplándose la construcción de,
+                            al menos, cuatro paños para alimentadores, el paño de conexión del
+                            transformador antes mencionado a la barra principal, un paño de conexión
+                            del nuevo transformador a la barra auxiliar, la construcción de un paño
+                            de interconexión con la barra existente y espacio en barra para la
+                            construcción de cuatro paños futuros. En caso de definirse el desarrollo
+                            de la ampliación de este patio como una sala de celdas, se deberán
+                            considerar los paños contenidos en esta descripción junto con la
+                            construcción de una celda para equipos de medida, la construcción de una
+                            celda para servicios auxiliares si corresponde, y el espacio en la sala
+                            para la conexión de posiciones futuras definidas anteriormente.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">construcción nueva sección barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">sección barra 12 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal más barra
+                            auxiliar</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['cuatro paños para alimentadores',
+                            'paño de conexión del transformador antes mencionado a la barra
+                            principal', 'paño de conexión del nuevo transformador a la barra
+                            auxiliar', 'construcción de un paño de interconexión con la barra
+                            existente y espacio en barra para la construcción de cuatro paños
+                            futuros.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">al menos 4 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/12
+                            kV , Cap: 50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">50 MVA</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
+                    <ns0:coordinates>-70.57436242,-33.50623754, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Mariscal (NTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_211</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_211">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mariscal (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">5.234.489 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Mariscal mediante la instalación de un nuevo
+                            transformador 110/12 kV y al menos 50 MVA de capacidad con Cambiador de
+                            Derivación Bajo Carga (CDBC), y sus respectivos paños de conexión en
+                            ambos niveles de tensión. A su vez, el proyecto incluye la ampliación de
+                            la barra e instalaciones comunes del patio de 110 kV de la subestación,
+                            cuya configuración corresponde a barra simple seccionada, la cual deberá
+                            considerar espacio en barra y plataforma para una posición, de manera de
+                            permitir la conexión del nuevo transformador de poder antes mencionado.
+                            Adicionalmente, el proyecto considera la construcción de una nueva
+                            sección de barra de 12 kV, en configuración barra principal más barra
+                            auxiliar, contemplándose la construcción de, al menos, cuatro paños para
+                            alimentadores, el paño de conexión del transformador antes mencionado,
+                            un paño para la conexión de un banco de condensadores, la construcción
+                            de un paño de interconexión con la barra existente y espacio en barra
+                            para la construcción de cuatro paños futuros. En caso de definirse el
+                            desarrollo de la ampliación de este patio como una sala de celdas, se
+                            deberán considerar los paños contenidos en esta descripción junto con la
+                            construcción de una celda para equipos de medida, la construcción de una
+                            celda para servicios auxiliares si corresponde, y el espacio en la sala
+                            para la conexión de posiciones futuras definidas anteriormente. El
+                            proyecto contempla la instalación de un nuevo banco de condensadores de
+                            5MVAr en 12 kV.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevo transformador de poder
+                            antes mencionado.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">construcción nueva sección barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">sección barra 12 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra principal más barra
+                            auxiliar</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['cuatro paños para alimentadores',
+                            'paño de conexión del transformador antes mencionado', 'paño para la
+                            conexión de un banco de condensadores', 'construcción de un paño de
+                            interconexión con la barra existente y espacio en barra para la
+                            construcción de cuatro paños futuros.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/12
+                            kV , Cap: 50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.65603869,-33.59872098, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Las Arañas (RTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_210</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_210">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Las Arañas (RTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">4.037.455 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Las Arañas mediante el reemplazo del actual
+                            transformador N°4 de 66/13,2 kV y 10 MVA, por un nuevo equipo de
+                            transformación 66/13,2 kV y al menos 30 MVA de capacidad con Cambiador
+                            de Derivación Bajo Carga (CDBC) y sus respectivos paños de conexión en
+                            ambos niveles de tensión. A su vez, el proyecto considera el reemplazo
+                            de todo el equipamiento que se vea sobrepasado en sus características
+                            nominales producto del aumento de capacidad antes descrito. Además, el
+                            proyecto contempla la ampliación de la barra de 66 kV, en configuración
+                            barra simple, en una posición, de manera de permitir la normalización
+                            del paño de conexión del transformador de poder antes mencionado.
+                            Adicionalmente, el proyecto considera la ampliación de la barra de 13,2
+                            kV, en configuración barra simple, contemplándose la construcción de, al
+                            menos, 2 paños para alimentadores, el paño de conexión del nuevo
+                            transformador y espacio en barra para la construcción de tres paños
+                            futuros. En caso de definirse el desarrollo de la ampliación de este
+                            patio como una sala de celdas, se deberán considerar los paños
+                            contenidos en esta descripción junto con la construcción de una celda
+                            para equipos de medida, la construcción de una celda para servicios
+                            auxiliares si corresponde, y el espacio en la sala para la conexión de
+                            posiciones futuras definidas anteriormente.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">ampliación barra 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">Revisar manualmente, al parecer no
+                            hay conexiones en el texto.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">1</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">ampliación barra 13,2 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['2 paños para alimentadores',
+                            'paño de conexión del nuevo transformador y espacio en barra para la
+                            construcción de tres paños futuros.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 2 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">reemplazo actual transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">transformador N°4
+                            66/13,2 kV 10 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/13,2 kV ,
+                            Cap: 30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-71.413212,-33.907941, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Talca (RTR ATMT)</ns0:name>
+                <ns0:styleUrl>#Amp_211</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_211">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Talca (RTR ATMT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">4.264.350 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Talca mediante el reemplazo del actual
+                            transformador N° 3 de 66/13,8 kV y 10 MVA, por un nuevo equipo de
+                            transformación 66/13,8 kV y al menos 30 MVA de capacidad con Cambiador
+                            de Derivación Bajo Carga (CDBC). A su vez, el proyecto considera la
+                            ampliación de la barra de 66 kV, en configuración barra simple, de
+                            manera de permitir el reemplazo del equipo de transformación antes
+                            mencionado, junto con el reemplazo de todo el equipamiento que se vea
+                            sobrepasado en sus características nominales producto del aumento de
+                            capacidad antes descrito. Adicionalmente, el proyecto considera la
+                            ampliación de la barra de 13,8 kV, en configuración barra simple,
+                            contemplándose la construcción de, al menos, cuatro paños para
+                            alimentadores, el paño de conexión del transformador antes mencionado,
+                            la construcción de un paño de interconexión con la barra existente y un
+                            paño para la conexión de un banco de condensadores. En caso de definirse
+                            el desarrollo de la ampliación de este patio como una sala de celdas, se
+                            deberán considerar los paños contenidos en esta descripción junto con la
+                            construcción de una celda para equipos de medida, la construcción de una
+                            celda para servicios auxiliares si corresponde, y el espacio en la sala
+                            para la conexión de posiciones futuras definidas anteriormente. El
+                            proyecto contempla la instalación de un nuevo banco de condensadores de
+                            5 MVAr en 13,8 kV.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">ampliación barra 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">Revisar manualmente, al parecer no
+                            hay conexiones en el texto.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">Buscar en Informe</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">ampliación barra 13,8 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['cuatro paños para alimentadores',
+                            'paño de conexión del transformador antes mencionado', 'construcción de
+                            un paño de interconexión con la barra existente y un paño para la
+                            conexión de un banco de condensadores.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">reemplazo actual transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">transformador N° 3
+                            66/13,8 kV 10 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/13,8 kV ,
+                            Cap: 30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-71.639994,-35.436838, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Coronel (RTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_210</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_210">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Coronel (RTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">4.497.320 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Coronel mediante el reemplazo del actual
+                            transformador N° 1 de 66/15 kV y 9 MVA, por un nuevo equipo de
+                            transformación 66/15 kV y al menos 30 MVA de capacidad con Cambiador de
+                            Derivación Bajo Carga (CDBC). A su vez, el proyecto considera la
+                            ampliación de las barras de 66 kV, en configuración barra principal y
+                            barra de transferencia, de manera de permitir el reemplazo del equipo de
+                            transformación antes mencionado, junto con el reemplazo de todo el
+                            equipamiento que se vea sobrepasado en sus características nominales
+                            producto del aumento de capacidad antes descrito. Adicionalmente, el
+                            proyecto considera la ampliación de la barra de 15 kV, en configuración
+                            barra simple, contemplándose la construcción de, al menos, cuatro paños
+                            para alimentadores, el paño de conexión del transformador antes
+                            mencionado y la construcción de un paño de interconexión con la barra
+                            existente. En caso de definirse el desarrollo de la ampliación de este
+                            patio como una sala de celdas, se deberán considerar los paños
+                            contenidos en esta descripción junto con la construcción de una celda
+                            para equipos de medida, la construcción de una celda para servicios
+                            auxiliares si corresponde, y el espacio en la sala para la conexión de
+                            posiciones futuras definidas anteriormente.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">ampliación barras 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal y barra de
+                            transferencia</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">Revisar manualmente, al parecer no
+                            hay conexiones en el texto.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">Buscar en Informe</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">ampliación barra 15 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['cuatro paños para alimentadores',
+                            'paño de conexión del transformador antes mencionado y la construcción
+                            de un paño de interconexión con la barra existente.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">reemplazo actual transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">transformador N° 1
+                            66/15 kV 9 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/15 kV ,
+                            Cap: 30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-73.15198544,-37.00881822, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Cañete (NTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_211</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_211">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cañete (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">5.204.846 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Cañete mediante la instalación de un nuevo
+                            transformador 66/23 kV y al menos 16 MVA de capacidad con Cambiador de
+                            Derivación Bajo Carga (CDBC), y sus respectivos paños de conexión en
+                            ambos niveles de tensión. A su vez, el proyecto incluye la ampliación de
+                            la barra e instalaciones comunes del patio de 66 kV de la subestación,
+                            cuya configuración corresponde a barra simple, la cual deberá considerar
+                            espacio en barra y plataforma para dos posiciones, de manera de permitir
+                            la conexión del nuevo transformador de poder antes mencionado y la
+                            normalización de la conexión de la línea 1x66 kV Tres Pinos – Cañete.
+                            Adicionalmente, el proyecto considera la construcción de una nueva
+                            sección de barra de 23 kV, en configuración barra simple, contemplándose
+                            la construcción de, al menos, dos paños para alimentadores, el paño de
+                            conexión del transformador antes mencionado, un paño para la conexión de
+                            un banco de condensadores y la construcción de un paño de interconexión
+                            con la barra existente. En caso de definirse el desarrollo de la
+                            ampliación de este patio como una sala de celdas, se deberán considerar
+                            los paños contenidos en esta descripción junto con la construcción de
+                            una celda para equipos de medida, la construcción de una celda para
+                            servicios auxiliares si corresponde. Además, el proyecto contempla la
+                            instalación de dos nuevos bancos de condensadores de 3,6 MVAr en 23 kV,
+                            de dos etapas cada uno, conectados a cada sección de barra de 23 kV con
+                            sus respectivos paños de conexión.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevo transformador de poder
+                            antes mencionado', 'normalización de la conexión de la línea 1x66 kV
+                            Tres Pinos – Cañete.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">construcción nueva sección barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">sección barra 23 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['dos paños para alimentadores',
+                            'paño de conexión del transformador antes mencionado', 'paño para la
+                            conexión de un banco de condensadores y la construcción de un paño de
+                            interconexión con la barra existente.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 2 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 66/23 kV
+                            , Cap: 16 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">16 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-73.39383331,-37.83248605, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Los Negros (NTR ATMT) </ns0:name>
+                <ns0:styleUrl>#Amp_110</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_110">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Los Negros (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">7.677.670 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 48 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Los Negros mediante la instalación de un
+                            nuevo transformador 66/23 kV y al menos 16 MVA de capacidad con
+                            Cambiador de Derivación Bajo Carga (CDBC), y sus respectivos paños de
+                            conexión en ambos niveles de tensión. A su vez, el proyecto contempla la
+                            construcción de un nuevo patio de 66 kV, en configuración barra
+                            principal y barra de transferencia, con capacidad de barras de, al menos
+                            300 MVA con 75°C en el conductor y 35°C temperatura ambiente con sol,
+                            donde se deberá considerar espacio en barras y plataforma para la
+                            construcción de cuatro posiciones, de manera de permitir la conexión del
+                            nuevo equipo de transformación y el existente, la construcción de un
+                            paño acoplador, la reubicación de la conexión de la línea 1x66 kV
+                            Aihuapi – Los Negros y espacio con terreno nivelado para al menos dos
+                            paños futuros para el seccionamiento de uno de los circuitos de la línea
+                            2x66 kV Pilmaiquén – Osorno. En caso de definirse el desarrollo de este
+                            patio en tecnología encapsulada y aislada en gas del tipo GIS o
+                            equivalente, se deberán considerar los paños contenidos en esta
+                            descripción y el terreno nivelado indicado. Adicionalmente, el proyecto
+                            considera la construcción de una nueva barra de 23 kV, en configuración
+                            barra simple, contemplándose la construcción de, al menos, 3 paños para
+                            alimentadores, el paño de conexión del nuevo transformador y el paño
+                            para la conexión del transformador N°1. En caso de definirse el
+                            desarrollo de la ampliación de este patio como una sala de celdas, se
+                            deberán considerar los paños contenidos en esta descripción junto con la
+                            construcción de una celda para equipos de medida, la construcción de una
+                            celda para servicios auxiliares si corresponde.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">construcción nueva barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">nueva barra 23 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['3 paños para alimentadores',
+                            'paño de conexión del nuevo transformador y el paño para la conexión del
+                            transformador N°1.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">al menos 3 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 66/23 kV
+                            , Cap: 16 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">16 MVA</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-72.893794,-40.597864, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
         </ns0:Folder>
         <ns0:Folder>
             <ns0:name>Obras nuevas</ns0:name>
             <ns0:open>1</ns0:open>
-            <ns0:Placemark>
-                <ns0:name>Obra nueva 1</ns0:name>
-                <ns0:styleUrl>#ONva0</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#ONva0">
-                        <ns0:SimpleData name="OBRA">Obra nueva 1</ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">D-1</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Obra nueva</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1000000</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">Resumen de
-                            la obra nueva 1</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Obra nueva 2</ns0:name>
-                <ns0:styleUrl>#ONva1</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#ONva1">
-                        <ns0:SimpleData name="OBRA">Obra nueva 2</ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">D-2</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Obra nueva</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">2000000</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">2012-01-01</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">Resumen de
-                            la obra nueva 2</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-58.381, -34.603</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
-                            transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
-                            transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
-                            transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras e instalaciones comunes del patio de 110 kV de la subestación
-                            Cóndores, cuya configuración corresponde a barra principal con barra de
-                            transferencia, para dos nuevas posiciones, de manera de permitir la
-                            conexión de la obra “Nueva S/E Alto Molle y nueva línea 2x110 kV Alto
-                            Molle – Cóndores”.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
-                            transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
-                            nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-49.129324, 15.854966, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
         </ns0:Folder>
-
+        <ns0:Folder>
+            <ns0:name>Nuevas Lineas</ns0:name>
+            <ns0:open>1</ns0:open>
+        </ns0:Folder>
     </ns0:Document>
 </ns0:kml>

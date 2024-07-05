@@ -43,6 +43,7 @@ class Proyecto_ampliacion:
         self.texto = texto
 
         self.nombre_proyecto = titulo
+        self.nombre_se = None
         self.parrafos = None
         self.tipo = "Ampliación"
         self.patios = [] #a partir del resumen, podemos extraer el resumen de cada patio y extraer la informacion necesaria: Tension, Config, N_posiciones, Conexiones. Pos_disp.
@@ -68,7 +69,24 @@ class Proyecto_ampliacion:
     def __str__(self):
         return f"Nombre: {self.nombre}\nTipo: {self.tipo}"
 
-#
+
+    def extraer_nombre_subestacion(self):
+        # Define la expresión regular para extraer el nombre de la subestación
+        patron = r"S/E\s+([^0-9\(\)]+)(?:\s+\d{1,3}\s*kV)?"
+        
+        # Busca el patrón en el título
+        resultado = re.search(patron, self.nombre_proyecto)
+        
+        if resultado:
+            # Devuelve el nombre de la subestación
+            nombre = resultado.group(1).strip()
+            nombre_def = f"S/E {nombre}"
+            return nombre_def
+        else:
+            # Si no se encuentra el patrón, devuelve None o un mensaje de error
+            return None
+
+
     def extraer_resumen(self):
         # Definimos las frases de inicio y fin
         frase_inicio = "El proyecto consiste en"
@@ -122,6 +140,31 @@ class Proyecto_ampliacion:
         print(f"Resumen del proyecto: {self.resumen_proyecto}")
         print(f"Valor de inversión: {self.valor_inversion}")
         print(f"Entrada en operación: {self.entrada_operacion}")
+        print("\n")
+
+    def generar_diccionario_proyecto(self, l_patios, l_trafos, l_otros):
+        self.diccionario_proyecto = {
+            "nombre_se": self.nombre_se,
+            "obra": self.nombre_proyecto,
+            "decreto": self.decreto,
+            "tipo": self.tipo,
+            "vi": self.valor_inversion,
+            "entrada_op": self.entrada_operacion,
+            "resumen": self.resumen_proyecto,
+            "patios": self.diccionario_patios,
+            "n_patios": len(l_patios),
+            "trafos": self.diccionario_trafos,
+            "n_trafos": len(l_trafos),
+            "otros": self.diccionario_otros,
+            "n_otros": len(l_otros)
+        }
+        
+        return self.diccionario_proyecto
+        
+
+    def imprimir_resumen_diccionario_proyecto(self):
+        for key, value in self.diccionario_proyecto.items():
+            print(f"{key}: {value}")
         print("\n")
 
 
@@ -185,6 +228,8 @@ class Proyecto_ampliacion:
 
         Luego, se deben procesar los parrafos del proyecto, clasificarlos y generar el xml correspondiente al tipo de patio
         """
+
+        self.nombre_se = self.extraer_nombre_subestacion()
         self.resumen_proyecto = self.extraer_resumen()
         self.entrada_operacion = self.extraer_entrada_operacion()
         self.valor_inversion = self.extraer_valor_inversion()
@@ -220,25 +265,20 @@ class Proyecto_ampliacion:
                 otros.append(parrafo)
                 pass         
 
-        self.imprimir_resumen_atributos_proyecto()
+        #self.imprimir_resumen_atributos_proyecto()
         for patio in patios: #la listapatios tiene los distintos tipos de proyectos (patio, trafo, otros)
             patio.procesar()
             #patio.imprimir_resumen()
             nombre_patio = f"patio{patios.index(patio)+1}"
-            print(nombre_patio)
-            breakpoint()
             self.diccionario_patios[nombre_patio] = patio.diccionario
 
         
-        i_traf = 1
+
         for trafo in trafos:
             trafo.procesar()
             #trafo.imprimir_resumen()
-            nombre_trafo = f"trafo_{i_traf}"
+            nombre_trafo = f"trafo{trafos.index(trafo)+1}"
             self.diccionario_trafos[nombre_trafo] = trafo.diccionario
-            i_traf += 1
-
-
 
         for otro in otros:
             self.diccionario_otros["parrafo"] = otro
@@ -246,19 +286,8 @@ class Proyecto_ampliacion:
 
         self.resultado = {"patios": len(patios), "trafos": len(trafos), "otros": len(otros)}
 
-        self.generar_diccionario_proyecto()
+        self.generar_diccionario_proyecto(patios, trafos, otros)
 
-    def generar_diccionario_proyecto(self):
-        self.diccionario_proyecto = {
-            "obra": self.nombre_proyecto,
-            "decreto": self.decreto,
-            "tipo": self.tipo,
-            "vi": self.valor_inversion,
-            "entrada_op": self.entrada_operacion,
-            "resumen": self.resumen_proyecto,
-            "patios": self.diccionario_patios,
-            "trafos": self.diccionario_trafos,
-            "otros": self.diccionario_otros}
         
-        return self.diccionario_proyecto
-        
+
+

@@ -326,6 +326,7 @@ class Trafo:
         self.diccionario = self.generar_diccionario_trafo()
 
     def generar_diccionario_trafo(self):
+        #arreglar para q coincida con las llaves !!
         return {
             "tipo": self.elemento,
             "tension_cap_trafo_reemplazado": self.tension_trafo_reemplazado,
