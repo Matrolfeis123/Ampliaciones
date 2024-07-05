@@ -216,7 +216,7 @@ def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquem
 
 
                 dic_otros = diccionario_proyecto["otros"]
-                parrafo = dic_otros.get("parrafo", "N/A")
+                parrafo = dic_otros.get("parrafo1", "N/A")
                 simple_data_list.extend([
                     ("parrafo1", parrafo)
                 ])
@@ -333,7 +333,6 @@ def buscar_subestacion_por_nombre_v3(kml_file, nombre_subestacion_referencia):
     except ValueError as e:
         print(e)
         return None
-
 
 
 

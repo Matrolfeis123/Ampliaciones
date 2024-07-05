@@ -1104,6 +1104,7 @@
                         <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Alto Molle y
                             nueva línea 2x110 kV Alto Molle – Cóndores”.']</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1132,6 +1133,7 @@
                         <ns0:SimpleData name="patio1_configuracion">interruptor y medio</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_posiciones_disponibles">8</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1161,67 +1163,11 @@
                         <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E La Chimba y
                             nueva línea 2x110 kV Mejillones – La Chimba”.']</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-70.419211,-23.095244, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Nueva Cardones 220 kV (IM) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Cardones 220 kV (IM) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.896.506 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación del
-                            galpón e instalaciones comunes del patio de 220 kV de la subestación
-                            Nueva Cardones, cuya configuración corresponde a interruptor y medio,
-                            para cuatro nuevas diagonales, de manera de permitir la conexión de
-                            nuevos proyectos en la zona.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación galpón</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">interruptor y medio</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">8</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-70.42598,-27.518674, 0</ns0:coordinates>
-                </ns0:Point>
-            </ns0:Placemark>
-            <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Rahue 220 kV (BPS+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
-                <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Rahue 220 kV (BPS+BT) </ns0:SimpleData>
-                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
-                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
-                        <ns0:SimpleData name="VI">1.895.475 dólares</ns0:SimpleData>
-                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
-                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
-                            decreto</ns0:SimpleData>
-                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
-                            barras principales e instalaciones comunes del patio de 220 kV de la
-                            subestación Rahue, cuya configuración corresponde a barra principal
-                            seccionada y barra de transferencia, para dos nuevas posiciones, de
-                            manera de permitir la conexión de nuevos proyectos en la zona.</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_configuracion">barra principal seccionada y
-                            barra de transferencia</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
-                        <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
-                    </ns0:SchemaData>
-                </ns0:ExtendedData>
-                <ns0:Point>
-                    <ns0:coordinates>-73.08532,-40.573839, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -1250,6 +1196,7 @@
                             'nuevas líneas 2x220 kV Caracoles – Liqcau y 2x110 kV Guardiamarina –
                             Caracoles”.']</ns0:SimpleData>
                         <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1302,6 +1249,7 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/12
                             kV , Cap: 50 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1425,6 +1373,7 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/13,2 kV ,
                             Cap: 30 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1546,6 +1495,7 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/15 kV ,
                             Cap: 30 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -1666,6 +1616,7 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 66/23 kV
                             , Cap: 16 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">16 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>

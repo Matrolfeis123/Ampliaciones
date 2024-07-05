@@ -281,7 +281,7 @@ class Proyecto_ampliacion:
             self.diccionario_trafos[nombre_trafo] = trafo.diccionario
 
         for otro in otros:
-            self.diccionario_otros["parrafo"] = otro
+            self.diccionario_otros[f"parrafo{otros.index(otro)+1}"] = otro
 
 
         self.resultado = {"patios": len(patios), "trafos": len(trafos), "otros": len(otros)}
