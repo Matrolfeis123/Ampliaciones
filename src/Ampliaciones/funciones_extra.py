@@ -169,6 +169,7 @@ def generar_diccionario_proyectos_v2(file):
 
         return diccionario_obras_nuevas, diccionario_lineas_nuevas
 
+
 def generar_diccionario_ampliaciones(file):
     diccionario_obras_ampliacion = {}
 
@@ -191,7 +192,7 @@ def generar_diccionario_ampliaciones(file):
             else:
                 match = re.match(r'^(.*?)\s+(\d+)$', line)
                 if match:
-                    titulo = match.group(1).replace(".", "")
+                    titulo = match.group(1).replace(".", "").strip()
                     pag_inicio = int(match.group(2)) - 1
                     pag_final = pag_inicio + 3
 
@@ -209,20 +210,24 @@ def extraer_texto_entre_delimitadores_v2(texto, delimitador_inicial, delimitador
 def generar_diccionario_descripciones_amp(file, diccionario):
     dic_descripciones = {}
     try:
-
         with pdfplumber.open(file) as pdf:
             for titulo, paginas in diccionario.items():
                 text = ""
                 for i in range(paginas[0], paginas[1] + 1):
                     text += pdf.pages[i].extract_text()
 
-                text = text.replace("\n", " ")
-                text = text.replace("  ", " ")
+                text = text.replace("\n", " ").replace("  ", " ")
                 texto_limpio = re.sub(r'\d{1,2}—–——–', "", text)
-                texto_limpio = re.sub(r'—–——–', "", texto_limpio)
-                texto_limpio = texto_limpio.replace("  ", " ")
-                descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación", "moneda de los Estados Unidos de América")
+                texto_limpio = re.sub(r'—–——–', "", texto_limpio).replace("  ", " ")
+                descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación", "Ministerio de Energía.")
+                # Si en descripcion def se encuentra mas de dos veces la frase "Descripción general y ubicación", cambiamos la busqueda
+                if descripcion_def.count("Descripción general y ubicación") >= 2 or descripcion_def == "ERROR EXTRAYENDO TEXTO":
+                    descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación", "del presente Informe")
+                    #print("Caso Descrpcion general y ubicación > 2 veces")
 
+                    if descripcion_def.count("Descripción general y ubicación") >= 2 or descripcion_def == "ERROR EXTRAYENDO TEXTO":
+                        descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación", "moneda de los Estados Unidos de América")
+                        #print("Caso Descrpcion general y ubicación > 2 veces")
                 
 
                 if titulo.strip() == "Ampliación en S/E Las Arañas (RTR ATMT)":
@@ -232,9 +237,6 @@ def generar_diccionario_descripciones_amp(file, diccionario):
                     descripcion_def = extraer_texto_entre_delimitadores_v2(texto_limpio, "Descripción general y ubicación de la obra El proyecto consiste en el aumento de capacidad de la subestación Las Arañas", "moneda de los Estados Unidos de América")
 
                 dic_descripciones[titulo] = descripcion_def
-                    
-
-
     except Exception as e:
         print(f"Error en la ejecución del análisis: {e}")
 

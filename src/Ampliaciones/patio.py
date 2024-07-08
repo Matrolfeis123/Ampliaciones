@@ -1,8 +1,4 @@
-# En este script manejaremos todo lo relacionado con la clase patio. 
-# Esta clase sera instanciada cada vez que se encuentre un patio en el texto extraido de los PDFs.
-
 import re
-
 from funciones_extra import extraer_texto_entre_delimitadores_v2, remove_stopwords
 
 
@@ -525,7 +521,7 @@ class AmpBarraPatio:
                                         posiciones_disponibles -= int(coincidencia[0])
 
                                     else:
-                                        print("Revisar tipo de paño a conectar xdddd, igual resta 1")
+                                        #print("Revisar tipo de paño a conectar xdddd, igual resta 1")
                                         posiciones_disponibles -= 1
 
                                 else:

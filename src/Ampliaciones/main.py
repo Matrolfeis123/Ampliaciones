@@ -2,12 +2,9 @@ from funciones_extra import generar_diccionario_ampliaciones, generar_diccionari
 from proyecto_ampliacion import Proyecto_ampliacion
 import os
 from unidecode import unidecode
-
 from difflib import get_close_matches
 import xml.etree.ElementTree as ET
 
-
-import xml.etree.ElementTree as ET
 
 def buscar_subestacion_reserva(kml_file, nombre_subestacion):
     tree = ET.parse(kml_file)
@@ -61,8 +58,6 @@ def buscar_subestacion_reserva(kml_file, nombre_subestacion):
                     print("Opción no válida, por favor ingrese un número dentro del rango.")
             except ValueError:
                 print("Entrada no válida, por favor ingrese un número.")
-
-
 
 def buscar_subestacion_por_nombre_v2(kml_file, nombre_subestacion_referencia):
     """
@@ -137,8 +132,6 @@ def buscar_subestacion_por_nombre_v2(kml_file, nombre_subestacion_referencia):
     except ValueError as e:
         print(e)
         return None
-
-
 
 def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquema):
     try:
@@ -246,6 +239,110 @@ def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquem
         return
 
 
+def agregar_proyecto_ampliacion_licitacion_v2(kml_file, diccionario_proyecto, nombre_esquema):
+    try:
+        #parsear el archivo kml
+        tree = ET.parse(kml_file)
+        root = tree.getroot()
+
+    except ET.ParseError as e:
+        print("Error al parsear el archivo KML: ", e)
+        return
+    
+    except FileNotFoundError as e:
+        print("Error al abrir el archivo KML: ", e)
+        return
+    
+    except Exception as e:
+        print("Error inesperado: ", e)
+        return
+    
+    ns = {'kml': 'http://www.opengis.net/kml/2.2'}
+
+    try:
+        # Buscar la carpeta de ampliaciones, denominada: "Ampliaciones a S/E"
+        folders = root.findall(".//kml:Folder", ns)
+        target_folder = None
+
+        for folder in folders:
+            name = folder.find("kml:name", ns).text
+            if name == "Ampliaciones":
+                target_folder = folder
+                # Crear un nuevo placemark
+                placemark = ET.SubElement(folder, "{http://www.opengis.net/kml/2.2}Placemark")
+
+                # Crear un nombre para el placemark
+                name = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}name")
+                name.text = diccionario_proyecto["obra"]
+
+                # Agregar el estilo del Placemark
+                style_url = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}styleUrl")
+                style_url.text = f"#{nombre_esquema}_l"
+
+                # Agregar los datos extendidos del Placemark
+                extended_data = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}ExtendedData")
+                schema_data = ET.SubElement(extended_data, "{http://www.opengis.net/kml/2.2}SchemaData", schemaUrl=f"#{nombre_esquema}_l")
+
+                simple_data_list = [
+                    ("OBRA", diccionario_proyecto["obra"]),
+                    ("DECRETO", diccionario_proyecto["decreto"]),
+                    ("TIPO", diccionario_proyecto["tipo"]),
+                    ("VI", diccionario_proyecto["vi"]),
+                    ("ENTRADA_OP", diccionario_proyecto["entrada_op"]), #Aca Me falta agregar la licitacion
+                    ("RESUMEN", diccionario_proyecto["resumen"] if diccionario_proyecto["resumen"] else "N/A")
+                ]
+
+
+
+                dic_patios = diccionario_proyecto["patios"]
+                for key, value in dic_patios.items():
+                    simple_data_list.extend([
+                        (f"{key}_tipo", value["tipo"]),
+                        (f"{key}_tension", value["tension"]),
+                        (f"{key}_configuracion", value["configuracion"]),
+                        (f"{key}_conexiones", value["conexiones"]),
+                        (f"{key}_posiciones_disponibles", value["posiciones_disponibles"])
+                    ])
+
+                dic_trafos = diccionario_proyecto["trafos"]
+                for key, value in dic_trafos.items():
+                    simple_data_list.extend([
+                        (f"{key}_tipo", value.get("tipo", "N/A")),
+                        (f"{key}_tension_trafo_reemplazado", value.get("tension_cap_trafo_reemplazado", "N/A")),
+                        (f"{key}_tension_trafo_nvo", value.get("tension_cap_nvo_trafo", "N/A")),
+                        (f"{key}_Capacidad", value.get("capacidad_trafo_nuevo", "N/A"))
+                    ])
+
+
+                dic_otros = diccionario_proyecto["otros"]
+                parrafo = dic_otros.get("parrafo1", "N/A")
+                simple_data_list.extend([
+                    ("parrafo1", parrafo)
+                ])
+
+                for key, value in simple_data_list:
+                    data = ET.SubElement(schema_data, "{http://www.opengis.net/kml/2.2}SimpleData", {"name": key})
+                    data.text = str(value)
+
+                point = ET.SubElement(placemark, "{http://www.opengis.net/kml/2.2}Point")
+                coordinates = ET.SubElement(point, "{http://www.opengis.net/kml/2.2}coordinates")
+                coordinates.text = f"{diccionario_proyecto["coordenadas"][1]},{diccionario_proyecto["coordenadas"][0]}, 0"
+
+                try:
+                    tree.write(kml_file, encoding="utf-8", xml_declaration=True)
+                except Exception as e:
+                    print("Error al escribir el archivo KML: ", e)
+
+        if not target_folder:
+            raise KeyError("No se encontró la carpeta de ampliaciones")
+            
+    except KeyError as e:
+        print(f"Clave faltante en diccionario_proyecto: {e}")
+        return
+
+    except Exception as e:
+        print("Error inesperado: ", e)
+        return
 
 
 def buscar_subestacion_por_nombre_v3(kml_file, nombre_subestacion_referencia):
@@ -334,8 +431,6 @@ def buscar_subestacion_por_nombre_v3(kml_file, nombre_subestacion_referencia):
         print(e)
         return None
 
-
-
 def identificar_disenos(diccionarios):
     """
     Identifica los diseños únicos necesarios a partir de una lista de diccionarios.
@@ -350,7 +445,6 @@ def identificar_disenos(diccionarios):
         disenos_unicos.add(combinacion)
 
     return list(disenos_unicos)
-
 
 def agregar_proyecto_ampliacion(proyecto):
     print("\n")
@@ -387,8 +481,6 @@ def agregar_proyecto_ampliacion(proyecto):
         print(("El proyecto se manejara manualmente al final de la ejecucion"))
         return "manual"
 
-
-
 def menu_opciones_proyectos(l_proyectos):
 
     l_proy_manual = []
@@ -409,10 +501,13 @@ def menu_opciones_proyectos(l_proyectos):
         opcion = input("Ingrese el número de la opción deseada: ")
 
         if opcion == "1":
-            print("Implementar función para agregar proyecto al KMZ")
-            qtal = agregar_proyecto_ampliacion(proyecto)
+            if proyecto.licitacion:
+                qtal = agregar_proyecto_ampliacion_licitacion_v2(proyecto)
 
-            if qtal == "manual":
+            elif not proyecto.licitacion:
+                qtal = agregar_proyecto_ampliacion(proyecto)
+
+            elif qtal == "manual":
                 l_proy_manual.append(proyecto)
                 l_proyectos.remove(proyecto)
                 continue
@@ -457,6 +552,8 @@ def main():
         try:
             proyecto = Proyecto_ampliacion(titulo, descripcion)
             proyecto.procesar_proyecto()
+            print(proyecto.nombre_proyecto)
+            print(proyecto.licitacion)
             conteo_casos.append(proyecto.resultado)
             lista_proyectos.append(proyecto)
 
@@ -505,30 +602,6 @@ def main():
 
 
 
-# diccionario_output_proyecto = {
-#     "obra": proyecto.nombre_proyecto,
-#     "decreto": "PET Final 2023",
-#     "tipo": proyecto.tipo,
-#     "pos_disp": proyecto.posiciones_disponibles,
-#     "Nombre Proyecto": proyecto.nombre_proyecto,
-#     "Nombre S/E": proyecto.nombre,
-#     "Tipo": proyecto.tipo,
-#     "Posiciones": proyecto.posiciones_disponibles,
-#     "resumen": proyecto.resumen_proyecto
-# }
-
-# lista_proyectos.append(diccionario_output_proyecto)
-
-
-# diccio_proy = {
-#     "Nombre Proyecto": titulo,s
-#     "Nombre S/E": "No se pudo extraer",
-#     "Tipo": "Ampliacion",
-#     "Posiciones": "No se pudo extraer",
-#     "Resumen": "No se pudo extraer"
-# }
-
-# lista_proyectos.append(diccio_proy)
 
 
 if __name__ == "__main__":

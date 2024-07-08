@@ -5,6 +5,7 @@ import re
 import time
 import pdfplumber
 from openpyxl import Workbook
+from funciones_extra import extraer_texto_entre_delimitadores_v2
 from patio import Patio, Trafo, AmpBarraPatio
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -52,6 +53,7 @@ class Proyecto_ampliacion:
 
         self.valor_inversion = None
         self.entrada_operacion = None
+        self.licitacion = None
 
 
         self.numero_posiciones = None
@@ -133,6 +135,23 @@ class Proyecto_ampliacion:
         else:
             return None # Devolver None si no se encuentra la fecha de entrada en operación
 
+    def extraer_licitacion(self):
+        # Vamos a corroborar si la palabra "licitación" aparece en el texto
+        patron = re.compile(r"licitación", re.IGNORECASE)
+
+        match = patron.search(self.texto)
+
+        if match:
+            desc_licitacion = extraer_texto_entre_delimitadores_v2(self.texto, "La adjudicación", "Ministerio de Energía")
+
+            if desc_licitacion == "ERROR EXTRAYENDO TEXTO":
+                desc_licitacion = extraer_texto_entre_delimitadores_v2(self.texto, "La adjudicación", "presente Informe")
+
+            return desc_licitacion if desc_licitacion != "ERROR EXTRAYENDO TEXTO" else None
+        
+        else:
+            return None
+
 
     def imprimir_resumen_atributos_proyecto(self):
         print(f"Nombre del proyecto: {self.nombre_proyecto}")
@@ -150,6 +169,7 @@ class Proyecto_ampliacion:
             "tipo": self.tipo,
             "vi": self.valor_inversion,
             "entrada_op": self.entrada_operacion,
+            "licitacion": self.licitacion,
             "resumen": self.resumen_proyecto,
             "patios": self.diccionario_patios,
             "n_patios": len(l_patios),
@@ -233,6 +253,10 @@ class Proyecto_ampliacion:
         self.resumen_proyecto = self.extraer_resumen()
         self.entrada_operacion = self.extraer_entrada_operacion()
         self.valor_inversion = self.extraer_valor_inversion()
+        self.licitacion = self.extraer_licitacion()
+
+        
+        
         self.parrafos = sent_tokenize(self.texto)
         patios = []
         trafos = []
