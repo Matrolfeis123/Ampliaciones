@@ -288,7 +288,8 @@ def agregar_proyecto_ampliacion_licitacion_v2(kml_file, diccionario_proyecto, no
                     ("DECRETO", diccionario_proyecto["decreto"]),
                     ("TIPO", diccionario_proyecto["tipo"]),
                     ("VI", diccionario_proyecto["vi"]),
-                    ("ENTRADA_OP", diccionario_proyecto["entrada_op"]), #Aca Me falta agregar la licitacion
+                    ("ENTRADA_OP", diccionario_proyecto["entrada_op"]),
+                    ("LICITACION", diccionario_proyecto["licitacion"]),
                     ("RESUMEN", diccionario_proyecto["resumen"] if diccionario_proyecto["resumen"] else "N/A")
                 ]
 
@@ -409,7 +410,7 @@ def buscar_subestacion_por_nombre_v3(kml_file, nombre_subestacion_referencia):
                     print(f"  Nombre: {nombre}")
                     print(f"  Coordenadas: {latitud}, {longitud}")
                 
-                seleccion = input("Seleccione el número de la subestación correcta ('0' para buscar más o exit para salir): ")
+                seleccion = input("Seleccione el número de la subestación correcta ('0' para buscar más o exit para ingreso manual al final): ")
                 
                 if seleccion.isdigit() and 0 <= int(seleccion) <= len(placemarks):
                     seleccion = int(seleccion)
@@ -467,7 +468,12 @@ def agregar_proyecto_ampliacion(proyecto):
         esquema = f"Amp_{proyecto.diccionario_proyecto['n_patios']}{proyecto.diccionario_proyecto['n_trafos']}{proyecto.diccionario_proyecto['n_otros']}"
         print(f"Esquema: {esquema}")
         try:
-            agregar_proyecto_ampliacion_v2(kml_write, proyecto.diccionario_proyecto, esquema)
+            print(proyecto.diccionario_proyecto["licitacion"])
+            if proyecto.licitacion:
+                agregar_proyecto_ampliacion_licitacion_v2(kml_write, proyecto.diccionario_proyecto, esquema)
+            
+            else:
+                agregar_proyecto_ampliacion_v2(kml_write, proyecto.diccionario_proyecto, esquema)
         
         except Exception as e:
             print("Error al agregar proyecto al KMZ: ", e)
@@ -501,13 +507,10 @@ def menu_opciones_proyectos(l_proyectos):
         opcion = input("Ingrese el número de la opción deseada: ")
 
         if opcion == "1":
-            if proyecto.licitacion:
-                qtal = agregar_proyecto_ampliacion_licitacion_v2(proyecto)
+            print("Implementar función para agregar proyecto al KMZ")
+            qtal = agregar_proyecto_ampliacion(proyecto)
 
-            elif not proyecto.licitacion:
-                qtal = agregar_proyecto_ampliacion(proyecto)
-
-            elif qtal == "manual":
+            if qtal == "manual":
                 l_proy_manual.append(proyecto)
                 l_proyectos.remove(proyecto)
                 continue

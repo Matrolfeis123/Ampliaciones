@@ -2154,23 +2154,25 @@
                     &lt;/tr&gt;&lt;/table&gt;</ns0:text>
             </ns0:BalloonStyle>
         </ns0:Style>
-
-
         <ns0:Folder>
             <ns0:name>Ampliaciones</ns0:name>
             <ns0:open>1</ns0:open>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:name>Ampliación en S/E Cóndores 110 kV (BP+BT)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
                 <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT) </ns0:SimpleData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cóndores 110 kV (BP+BT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">1.579.763 dólares</ns0:SimpleData>
                         <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
                             siguientes a la fecha de publicación en el Diario Oficial del respectivo
                             decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de la obra “Nueva S/E Alto Molle y nueva
+                            línea 2x110 kV Alto Molle – Cóndores”, individualizada en el numeral
+                            4.2.1 del presente Informe.</ns0:SimpleData>
                         <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
                             barras e instalaciones comunes del patio de 110 kV de la subestación
                             Cóndores, cuya configuración corresponde a barra principal con barra de
@@ -2192,11 +2194,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Nueva Maitencillo 220 kV (IM) </ns0:name>
+                <ns0:name>Ampliación en S/E Nueva Maitencillo 220 kV (IM)</ns0:name>
                 <ns0:styleUrl>#Amp_100</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Maitencillo 220 kV (IM) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Maitencillo 220 kV (IM)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">1.880.310 dólares</ns0:SimpleData>
@@ -2221,17 +2223,29 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Mejillones 110 kV (BS) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:name>Ampliación en S/E Mejillones 110 kV (BS)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
                 <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mejillones 110 kV (BS) </ns0:SimpleData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mejillones 110 kV (BS)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">1.509.964 dólares</ns0:SimpleData>
                         <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
                             siguientes a la fecha de publicación en el Diario Oficial del respectivo
                             decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras: “Ampliación en S/E La
+                            Portada (BS)”, “Conexión de línea 1x110 kV Tap Desalant – Desalant en
+                            S/E La Portada” y “Nueva S/E La Chimba y nueva línea 2x110 kV Mejillones
+                            – La Chimba” individualizadas en los numerales 4.1.2, 4.1.3 y 4.2.3
+                            respectivamente del presente Informe. La inclusión de esta obra en el
+                            presente Plan de Expansión está sujeta a la revocación parcial del
+                            Decreto 13T de 2020, en particular de la obra: “Construcción Bypass para
+                            la línea 1x220 kV Atacama - Esmeralda, la Línea 1x110 kV Esmeralda - La
+                            Portada y Línea 1x110 kV Mejillones - Antofagasta y desmantelamiento”,
+                            solicitada por Edelnor Transmisión S.A., con fecha 20 de octubre de
+                            2023, y actualmente en tramitación ante el Ministerio de Energía.</ns0:SimpleData>
                         <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de la
                             barra principal e instalaciones comunes del patio de 110 kV de la
                             subestación Mejillones, cuya configuración corresponde a barra simple,
@@ -2251,17 +2265,31 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Guardiamarina 110 kV (2BP+BT) </ns0:name>
-                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:name>Ampliación en S/E Guardiamarina 110 kV (2BP+BT)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
                 <ns0:ExtendedData>
-                    <ns0:SchemaData schemaUrl="#Amp_100">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Guardiamarina 110 kV (2BP+BT) </ns0:SimpleData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Guardiamarina 110 kV (2BP+BT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">1.854.596 dólares</ns0:SimpleData>
                         <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
                             siguientes a la fecha de publicación en el Diario Oficial del respectivo
                             decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras “Extensión de línea 1x220 kV
+                            Atacama – Esmeralda y cambio de conexión a S/E Caracoles”, “Ampliación
+                            en S/E Esmeralda 220 kV (IM)”, “Ampliación en S/E Liqcau 220 kV (IM)”,
+                            “Nueva S/E Caracoles, nuevas líneas 2x220 kV Caracoles – Liqcau y 2x110
+                            kV Guardiamarina – Caracoles” y “Nueva línea 1x220 kV Esmeralda –
+                            Liqcau” individualizadas en los numerales 4.1.5, 4.1.6, 4.1.7, 4.2.4 y
+                            4.2.5 respectivamente del presente Informe. La inclusión de esta obra en
+                            el presente Plan de Expansión está sujeta a la revocación parcial del
+                            Decreto 13T de 2020, en particular de la obra: “Construcción Bypass para
+                            la línea 1x220 kV Atacama - Esmeralda, la Línea 1x110 kV Esmeralda - La
+                            Portada y Línea 1x110 kV Mejillones - Antofagasta y desmantelamiento”,
+                            solicitada por Edelnor Transmisión S.A., con fecha 20 de octubre de
+                            2023, y actualmente en tramitación ante el Ministerio de Energía.</ns0:SimpleData>
                         <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
                             barras e instalaciones comunes del patio de 110 kV de la subestación
                             Guardiamarina, cuya configuración corresponde a doble barra principal y
@@ -2284,11 +2312,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Macul (NTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Macul (NTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_110</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_110">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Macul (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Macul (NTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">4.784.001 dólares</ns0:SimpleData>
@@ -2337,11 +2365,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Mariscal (NTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Mariscal (NTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_211</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_211">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mariscal (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Mariscal (NTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">5.234.489 dólares</ns0:SimpleData>
@@ -2393,7 +2421,8 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/12
                             kV , Cap: 50 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">50 MVA</ns0:SimpleData>
-                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">El proyecto contempla la instalación de un
+                            nuevo banco de condensadores de 5MVAr en 12 kV.</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -2401,11 +2430,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Las Arañas (RTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Las Arañas (RTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_210</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_210">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Las Arañas (RTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Las Arañas (RTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">4.037.455 dólares</ns0:SimpleData>
@@ -2515,7 +2544,8 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/13,8 kV ,
                             Cap: 30 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
-                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">El proyecto contempla la instalación de un
+                            nuevo banco de condensadores de 5 MVAr en 13,8 kV.</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -2523,11 +2553,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Coronel (RTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Coronel (RTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_210</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_210">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Coronel (RTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Coronel (RTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">4.497.320 dólares</ns0:SimpleData>
@@ -2583,11 +2613,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Cañete (NTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Cañete (NTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_211</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_211">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cañete (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cañete (NTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">5.204.846 dólares</ns0:SimpleData>
@@ -2638,7 +2668,10 @@
                         <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 66/23 kV
                             , Cap: 16 MVA</ns0:SimpleData>
                         <ns0:SimpleData name="trafo1_Capacidad">16 MVA</ns0:SimpleData>
-                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">Además, el proyecto contempla la instalación
+                            de dos nuevos bancos de condensadores de 3,6 MVAr en 23 kV, de dos
+                            etapas cada uno, conectados a cada sección de barra de 23 kV con sus
+                            respectivos paños de conexión.</ns0:SimpleData>
                     </ns0:SchemaData>
                 </ns0:ExtendedData>
                 <ns0:Point>
@@ -2646,11 +2679,11 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
-                <ns0:name>Ampliación en S/E Los Negros (NTR ATMT) </ns0:name>
+                <ns0:name>Ampliación en S/E Los Negros (NTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_110</ns0:styleUrl>
                 <ns0:ExtendedData>
                     <ns0:SchemaData schemaUrl="#Amp_110">
-                        <ns0:SimpleData name="OBRA">Ampliación en S/E Los Negros (NTR ATMT) </ns0:SimpleData>
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Los Negros (NTR ATMT)</ns0:SimpleData>
                         <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
                         <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
                         <ns0:SimpleData name="VI">7.677.670 dólares</ns0:SimpleData>
