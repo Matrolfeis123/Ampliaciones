@@ -152,7 +152,6 @@ class Proyecto_ampliacion:
         else:
             return None
 
-
     def imprimir_resumen_atributos_proyecto(self):
         print(f"Nombre del proyecto: {self.nombre_proyecto}")
         print(f"Tipo de proyecto: {self.tipo}")

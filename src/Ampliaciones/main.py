@@ -447,13 +447,12 @@ def identificar_disenos(diccionarios):
 
     return list(disenos_unicos)
 
-def agregar_proyecto_ampliacion(proyecto):
+def agregar_proyecto_ampliacion(proyecto, kml_write):
     print("\n")
     print(proyecto.imprimir_resumen_diccionario_proyecto())
     print("\n")
 
     kml_file_consultas = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "SEN_coordinador", "doc_coordinador.kml"))
-    kml_write = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "archivo_en_blanco.kml"))
 
     latitud, longitud = buscar_subestacion_por_nombre_v3(kml_file_consultas, unidecode(proyecto.diccionario_proyecto["nombre_se"]))
 
@@ -487,7 +486,7 @@ def agregar_proyecto_ampliacion(proyecto):
         print(("El proyecto se manejara manualmente al final de la ejecucion"))
         return "manual"
 
-def menu_opciones_proyectos(l_proyectos):
+def menu_opciones_proyectos(l_proyectos, kml_write):
 
     l_proy_manual = []
     
@@ -508,7 +507,7 @@ def menu_opciones_proyectos(l_proyectos):
 
         if opcion == "1":
             print("Implementar función para agregar proyecto al KMZ")
-            qtal = agregar_proyecto_ampliacion(proyecto)
+            qtal = agregar_proyecto_ampliacion(proyecto, kml_write)
 
             if qtal == "manual":
                 l_proy_manual.append(proyecto)
@@ -541,8 +540,29 @@ def menu_opciones_proyectos(l_proyectos):
 
     return l_proy_manual
 
+def informe_proyectos_no_procesados(l_proyectos):
+    print("Proyectos no procesados: \n")
+    for proyecto in l_proyectos:
+        print(proyecto.imprimir_resumen_diccionario_proyecto())
+
+    print("\n")
+
+    # Implementar función para guardar los proyectos no procesados en un archivo de texto
+    print("Guardando proyectos no procesados en un archivo de texto...")
+    with open("proyectos_no_procesados.txt", "w") as file:
+        for proyecto in l_proyectos:
+            file.write(proyecto.imprimir_resumen_diccionario_proyecto())
+            file.write("\n")
+
+    print("Proyectos no procesados guardados exitosamente.")
+    return
+
+
+
 def main():
-    pdf_file = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "PDFs", "plan_expansion_final_2023.pdf"))  
+    pdf_file = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "PDFs", "plan_expansion_final_2023.pdf"))
+    kml_write = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "archivo_en_blanco.kml"))
+
     dic_amp = generar_diccionario_ampliaciones(pdf_file)
     dic_desc_amp = generar_diccionario_descripciones_amp(pdf_file, dic_amp)
 
@@ -569,25 +589,19 @@ def main():
     disenos_unicos = identificar_disenos(conteo_casos)
     print(disenos_unicos)
     print("\n")
-    lista_proyectos_manuales = menu_opciones_proyectos(lista_proyectos)
+    lista_proyectos_manuales = menu_opciones_proyectos(lista_proyectos, kml_write)
     print("\n")
     print("Proyectos procesados, vamos con los manuales: \n")
     print("\n")
 
 
     if lista_proyectos_manuales:
+        informe_proyectos_no_procesados(lista_proyectos_manuales)
         print("Proyectos manuales: \n")
         for proyecto in lista_proyectos_manuales:
             print(proyecto.imprimir_resumen_diccionario_proyecto())
             print("\n")
             print("Continuar implementacion...")
-
-
-
-
-
-
-
 
 
 
@@ -601,10 +615,6 @@ def main():
     
 
         
-
-
-
-
 
 
 if __name__ == "__main__":

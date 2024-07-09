@@ -354,7 +354,6 @@ class Trafo:
         print(f"Tensión y capacidad del transformador a reemplazar: {self.tension_trafo_reemplazado}")
         print(f"Tensión y capacidad del nuevo transformador: {self.tension_nvo_trafo}")
 
-
 class AmpBarraPatio:
     def __init__(self, parrafo: str, tipo: str, elemento: str):
         self.parrafo = parrafo

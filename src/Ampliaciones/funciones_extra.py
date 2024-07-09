@@ -10,7 +10,6 @@ from difflib import get_close_matches
 from unidecode import unidecode
 import simplekml
 import time
-
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
