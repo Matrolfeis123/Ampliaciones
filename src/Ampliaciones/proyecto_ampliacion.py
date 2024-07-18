@@ -181,12 +181,6 @@ class Proyecto_ampliacion:
         return self.diccionario_proyecto
         
 
-    def imprimir_resumen_diccionario_proyecto(self):
-        for key, value in self.diccionario_proyecto.items():
-            print(f"{key}: {value}")
-        print("\n")
-
-
     def remove_stopwords(self, texto):
         stop_words = set(stopwords.words('spanish'))
         tokens = nltk.word_tokenize(texto)
@@ -289,12 +283,12 @@ class Proyecto_ampliacion:
                 pass         
 
         #self.imprimir_resumen_atributos_proyecto()
+
         for patio in patios: #la listapatios tiene los distintos tipos de proyectos (patio, trafo, otros)
             patio.procesar()
             #patio.imprimir_resumen()
             nombre_patio = f"patio{patios.index(patio)+1}"
             self.diccionario_patios[nombre_patio] = patio.diccionario
-
         
 
         for trafo in trafos:

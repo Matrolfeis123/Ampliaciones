@@ -5,6 +5,9 @@ from unidecode import unidecode
 from difflib import get_close_matches
 import xml.etree.ElementTree as ET
 
+############################################################################################################
+#### Lista funciones que deben borrarse, ya que no se utilizan en el programa principal ####################
+############################################################################################################
 
 def buscar_subestacion_reserva(kml_file, nombre_subestacion):
     tree = ET.parse(kml_file)
@@ -133,6 +136,11 @@ def buscar_subestacion_por_nombre_v2(kml_file, nombre_subestacion_referencia):
         print(e)
         return None
 
+
+############################################################################################################
+
+
+
 def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquema):
     try:
         #parsear el archivo kml
@@ -237,7 +245,6 @@ def agregar_proyecto_ampliacion_v2(kml_file, diccionario_proyecto, nombre_esquem
     except Exception as e:
         print("Error inesperado: ", e)
         return
-
 
 def agregar_proyecto_ampliacion_licitacion_v2(kml_file, diccionario_proyecto, nombre_esquema):
     try:
@@ -345,7 +352,6 @@ def agregar_proyecto_ampliacion_licitacion_v2(kml_file, diccionario_proyecto, no
         print("Error inesperado: ", e)
         return
 
-
 def buscar_subestacion_por_nombre_v3(kml_file, nombre_subestacion_referencia):
     """
     Busca la subestación en el archivo KML por el nombre proporcionado y maneja casos de múltiples coincidencias.
@@ -449,7 +455,7 @@ def identificar_disenos(diccionarios):
 
 def agregar_proyecto_ampliacion(proyecto, kml_write):
     print("\n")
-    print(proyecto.imprimir_resumen_diccionario_proyecto())
+    print(proyecto.imprimir_resumen_atributos_proyecto())
     print("\n")
 
     kml_file_consultas = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "SEN_coordinador", "doc_coordinador.kml"))
@@ -543,7 +549,7 @@ def menu_opciones_proyectos(l_proyectos, kml_write):
 def informe_proyectos_no_procesados(l_proyectos):
     print("Proyectos no procesados: \n")
     for proyecto in l_proyectos:
-        print(proyecto.imprimir_resumen_diccionario_proyecto())
+        print(proyecto.imprimir_resumen_atributos_proyecto())
 
     print("\n")
 
@@ -551,12 +557,11 @@ def informe_proyectos_no_procesados(l_proyectos):
     print("Guardando proyectos no procesados en un archivo de texto...")
     with open("proyectos_no_procesados.txt", "w") as file:
         for proyecto in l_proyectos:
-            file.write(proyecto.imprimir_resumen_diccionario_proyecto())
+            file.write(proyecto.imprimir_resumen_atributos_proyecto())
             file.write("\n")
 
     print("Proyectos no procesados guardados exitosamente.")
     return
-
 
 
 def main():
@@ -599,7 +604,7 @@ def main():
         informe_proyectos_no_procesados(lista_proyectos_manuales)
         print("Proyectos manuales: \n")
         for proyecto in lista_proyectos_manuales:
-            print(proyecto.imprimir_resumen_diccionario_proyecto())
+            print(proyecto.imprimir_resumen_atributos_proyecto())
             print("\n")
             print("Continuar implementacion...")
 
