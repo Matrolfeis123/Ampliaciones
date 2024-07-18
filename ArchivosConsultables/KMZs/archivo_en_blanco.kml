@@ -2194,6 +2194,36 @@
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Nueva Cardones 220 kV (IM)</ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nueva Cardones 220 kV (IM)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.896.506 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación del
+                            galpón e instalaciones comunes del patio de 220 kV de la subestación
+                            Nueva Cardones, cuya configuración corresponde a interruptor y
+                            medio, para cuatro nuevas diagonales, de manera de permitir la
+                            conexión de nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación galpón</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevos proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">8</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.42598,-27.518674,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+
+            <ns0:Placemark>
                 <ns0:name>Ampliación en S/E Nueva Maitencillo 220 kV (IM)</ns0:name>
                 <ns0:styleUrl>#Amp_100</ns0:styleUrl>
                 <ns0:ExtendedData>
@@ -2220,6 +2250,94 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-70.928938,-28.54294, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Nogales 220 kV (IM)</ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Nogales 220 kV (IM)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">2.321.098 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de
+                            las barras principales e instalaciones comunes del patio de 220 kV
+                            de la subestación Nogales, cuya configuración corresponde a
+                            interruptor y medio, para dos nuevas diagonales, de manera de
+                            permitir la conexión de nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barras</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">Interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['Nuevos proyectos en la zona']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">4</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-71.22641400000001,-32.720312,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Santa Clara 220 kV (IM)</ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Santa Clara 220 kV (IM)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">2.001.475 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras principales e instalaciones comunes del patio de 220 kV de la
+                            subestación Santa Clara, cuya configuración corresponde a interruptor y
+                            medio, para dos nuevas diagonales, de manera de permitir la conexión de
+                            nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barras</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">Interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['Nuevos proyectos en la zona']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">4</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-72.30346400000001,-37.344788,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Rahue 220 kV (BPS+BT)</ns0:name>
+                <ns0:styleUrl>#Amp_100</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Rahue 220 kV (BPS+BT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.895.475 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras principales e instalaciones comunes del patio de 220 kV de la
+                            subestación Rahue, cuya configuración corresponde a barra principal
+                            seccionada y barra de transferencia, para dos nuevas posiciones, de
+                            manera de permitir la conexión de nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barras</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal seccionada y
+                            barra de transferencia,</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['Nuevos proyectos en la zona']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-73.0843,-40.5733,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2262,6 +2380,49 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-70.419211,-23.095244, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E La Portada (BS)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E La Portada (BS)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.306.765 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras: “Ampliación en S/E
+                            Mejillones 110 kV (BS)”, “Conexión de línea 1x110 kV Tap Desalant –
+                            Desalant en S/E La Portada” y “Nueva S/E La Chimba y nueva línea 2x110
+                            kV Mejillones – La Chimba” individualizadas en los numerales 4.1.1,
+                            4.1.3 y 4.2.3 respectivamente del presente Informe.
+                            La inclusión de esta obra en el presente Plan de Expansión está sujeta a
+                            la revocación parcial del Decreto 13T de 2020, en particular de la obra:
+                            “Construcción Bypass para la línea 1x220 kV Atacama - Esmeralda, la
+                            Línea 1x110 kV Esmeralda - La Portada y Línea 1x110 kV Mejillones -
+                            Antofagasta y desmantelamiento”, solicitada por Edelnor Transmisión
+                            S.A., con fecha 20 de octubre de 2023, y actualmente en tramitación ante
+                            el Ministerio de Energía.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de la
+                            barra e instalaciones comunes de la subestación La Portada, cuya
+                            configuración corresponde a barra simple, en una posición, de manera de
+                            permitir la conexión de la obra “Conexión de línea 1x110 kV Tap Desalant
+                            – Desalant en S/E La Portada”.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la obra “Conexión de línea 1x110
+                            kV Tap Desalant – Desalant en S/E La Portada”.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.38588300000001,-23.535852,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2309,6 +2470,173 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-70.3733527240216,-23.5912623496396, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Esmeralda 220 kV (IM)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Esmeralda 220 kV (IM)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">6.669.436 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras La adjudicación de esta obra
+                            quedará condicionada a la adjudicación de las obras “Ampliación en S/E
+                            Guardiamarina 110 kV (2BP+BT)”, “Extensión de línea 1x220 kV Atacama –
+                            Esmeralda y cambio de conexión a S/E Caracoles”, “Ampliación en S/E
+                            Liqcau 220 kV (IM)”, “Nueva S/E Caracoles, nuevas líneas 2x220 kV
+                            Caracoles – Liqcau y 2x110 kV Guardiamarina – Caracoles” y “Nueva línea
+                            1x220 kV Esmeralda – Liqcau” individualizadas en los numerales 4.1.4,
+                            4.1.5, 4.1.7, 4.2.4 y 4.2.5 respectivamente del presente Informe.
+                            La inclusión de esta obra en el presente Plan de Expansión está sujeta a
+                            la revocación parcial del Decreto 13T de 2020, en particular de la obra:
+                            “Construcción Bypass para la línea 1x220 kV Atacama - Esmeralda, la
+                            Línea 1x110 kV Esmeralda - La Portada y Línea 1x110 kV Mejillones -
+                            Antofagasta y desmantelamiento”, solicitada por Edelnor Transmisión
+                            S.A., con fecha 20 de octubre de 2023, y actualmente en tramitación ante
+                            el Ministerio de Energía.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación del
+                            patio de 220 kV de la subestación Esmeralda, cuya configuración
+                            corresponde a barra simple, para pasar a una configuración de tipo
+                            interruptor y medio con espacio en barras y plataforma para al menos
+                            tres diagonales, de manera de permitir la conexión del banco de
+                            autotransformadores 220/110 kV existente, la conexión del paño asociado
+                            al proyecto “Extensión de línea 1x220 kV Atacama – Esmeralda y cambio de
+                            conexión a S/E Caracoles”, la conexión de la línea asociada al proyecto
+                            “Nueva línea 1x220 kV Esmeralda – Liqcau” y la conexión de nuevos
+                            proyectos en la zona. A su vez, el proyecto considera la conexión en 220
+                            kV del banco de autotransformadores existente en la nueva configuración
+                            de barra.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">Cambio config. BS a IM</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">Interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['banco de
+                            autotransformadores 220/110 kV existente, la conexión del paño asociado
+                            al proyecto “Extensión de línea 1x220 kV Atacama – Esmeralda y cambio de
+                            conexión a S/E Caracoles”, la conexión de la línea asociada al proyecto
+                            “Nueva línea 1x220 kV Esmeralda – Liqcau” y la conexión de nuevos
+                            proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">3 (corroborar)</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.388767,-23.673354,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Liqcau 220 kV (IM)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Liqcau 220 kV (IM)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">2.985.119 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras La adjudicación de esta obra
+                            quedará condicionada a la adjudicación de las obras “Ampliación en S/E
+                            Guardiamarina 110 kV (2BP+BT)”, “Extensión de línea 1x220 kV Atacama –
+                            Esmeralda y cambio de conexión a S/E Caracoles”, “Ampliación en S/E
+                            Esmeralda 220 kV (IM)”, “Nueva S/E Caracoles, nuevas líneas 2x220 kV
+                            Caracoles – Liqcau y 2x110 kV Guardiamarina – Caracoles” y “Nueva línea
+                            1x220 kV Esmeralda – Liqcau” individualizadas en los numerales 4.1.4,
+                            4.1.5, 4.1.6, 4.2.4 y 4.2.5 respectivamente del presente Informe.
+                            La inclusión de esta obra en el presente Plan de Expansión está sujeta a
+                            la revocación parcial del Decreto 13T de 2020, en particular de la obra:
+                            “Construcción Bypass para la línea 1x220 kV Atacama - Esmeralda, la
+                            Línea 1x110 kV Esmeralda - La Portada y Línea 1x110 kV Mejillones -
+                            Antofagasta y desmantelamiento”, solicitada por Edelnor Transmisión
+                            S.A., con fecha 20 de octubre de 2023, y actualmente en tramitación ante
+                            el Ministerio de Energía.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras principales e instalaciones comunes del patio de 220 kV de la
+                            subestación Liqcau, antes denominada Nueva La Negra, cuya configuración
+                            corresponde a interruptor y medio, para tres nuevas diagonales, de
+                            manera de permitir la conexión de la obra “Nueva S/E Caracoles, nuevas
+                            líneas 2x220 kV Caracoles – Liqcau y 2x110 kV Guardiamarina –
+                            Caracoles”, la conexión de la obra “Nueva línea 1x220 kV Esmeralda –
+                            Liqcau” y la conexión de nuevos proyectos en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliacion barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 220 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">Interruptor y medio</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Caracoles,
+                            nuevas
+                            líneas 2x220 kV Caracoles – Liqcau y 2x110 kV Guardiamarina –
+                            Caracoles”, la conexión de la obra “Nueva línea 1x220 kV Esmeralda –
+                            Liqcau” y la conexión de nuevos proyectos en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">1 (corroborar)</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.330557,-23.781893,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Sur (NTR ATMT)</ns0:name>
+                <ns0:styleUrl>#Amp_210_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_210_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Sur (NTR ATMT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">5.091.499 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de la obra “Adecuación de paño de línea
+                            1x110 kV Esmeralda – Sur en S/E Sur”, individualizada en el numeral
+                            4.1.9 del presente Informe.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Sur mediante la instalación de un nuevo
+                            transformador 110/13,8 kV. A su vez, el proyecto contempla la
+                            construcción de una nueva barra de 110 kV, en configuración barra
+                            simple, la cual deberá considerar espacio en barra y plataforma para
+                            tres posiciones. Adicionalmente, el proyecto considera la ampliación de
+                            la sala de celdas de 13,8 kV, en celdas de configuración barra simple,
+                            contemplándose la construcción de, al menos, tres celdas para
+                            alimentadores, la celda de conexión del nuevo transformador antes
+                            mencionado, la construcción de una celda de interconexión con la barra
+                            existente y espacio para la instalación de cuatro paños futuros.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">construcción nueva barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">nueva barra 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['nuevo transformador de poder
+                            antes mencionado, la conexión del transformador existente y la conexión
+                            del paño asociado a la obra “Adecuación de paño de línea 1x110 kV
+                            Esmeralda – Sur en S/E Sur”.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">Ampliacion sala celdas</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">sala de celdas de 13,8 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">Barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['contemplándose la construcción
+                            de, al menos, tres celdas para alimentadores, la celda de conexión del
+                            nuevo transformador antes mencionado, la construcción de una celda de
+                            interconexión con la barra existente y espacio para la instalación de
+                            cuatro paños futuros.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">al menos 4 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/13,8
+                            kV
+                            , Cap: 20 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">20 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.420158,-23.714684,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2362,6 +2690,54 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-70.57436242,-33.50623754, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Santa Elena (RTR ATMT)</ns0:name>
+                <ns0:styleUrl>#Amp_110</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_110">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Santa Elena (RTR ATMT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">4.611.719 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Santa Elena mediante el reemplazo del actual
+                            transformador N° 5 de 110/12 kV y 22,4 MVA, por un nuevo equipo de
+                            transformación 110/12 kV y al menos 50 MVA de capacidad. Adicionalmente,
+                            el proyecto considera la construcción de una nueva sala de celdas de 12
+                            kV, en configuración barra principal más barra auxiliar, contemplándose
+                            la construcción de, al menos, seis celdas para alimentadores, dos
+                            espacios para celdas de futuros alimentadores, las celdas de conexión
+                            del transformador antes mencionado a la barra principal y a la barra
+                            auxiliar, la construcción de una celda para equipos de medida y la
+                            construcción de celdas para la interconexión con las barras de media
+                            tensión existentes.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">construcción nueva sala celdas</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">sala celdas 12 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal más barra
+                            auxiliar</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['construcción
+                            de, al menos, seis celdas para alimentadores, dos espacios para celdas
+                            de futuros alimentadores, las celdas de conexión del transformador antes
+                            mencionado a la barra principal y a la barra auxiliar, la construcción
+                            de una celda para equipos de medida y la construcción de celdas para la
+                            interconexión con las barras de media tensión existentes.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0 (corroborar)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">reemplazo actual transformador N°5</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">110/12 kV y 22,4 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 110/12
+                            kV , Cap: 50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">50 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-70.60926012,-33.47467604,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2429,6 +2805,48 @@
                     <ns0:coordinates>-70.65603869,-33.59872098, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
+
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Bollenar 110 kV (BS)</ns0:name>
+                <ns0:styleUrl>#Amp_200</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_200">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Bollenar 110 kV (BS)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">2.498.983 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 30 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de la
+                            barra e instalaciones comunes del patio de 110 kV de la subestación
+                            Bollenar, cuya
+                            configuración corresponde a barra simple, para tres nuevas posiciones.
+                            Adicionalmente,
+                            el proyecto contempla la construcción de un nuevo paño en configuración
+                            barra simple para conectar la línea 1x110 kV Tap Off Alto Melipilla –
+                            Bollenar en la subestación Bollenar.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">ampliación barra 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">la conexión de un paño para la
+                            línea 1x110 kV Tap Off Alto Melipilla – Bollenar y la conexión de nuevos
+                            proyectos en la
+                            zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">2</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">construcción nuevo paño</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">paño 110 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['la línea 1x110 kV Tap Off Alto
+                            Melipilla – Bollenar en la subestación Bollenar.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">0</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-71.413212,-33.907941,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+
             <ns0:Placemark>
                 <ns0:name>Ampliación en S/E Las Arañas (RTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_210</ns0:styleUrl>
@@ -2487,6 +2905,46 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-71.413212,-33.907941, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Fuentecilla (BP+BT)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Fuentecilla (BP+BT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.433.942 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 54 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de las obras “Nueva S/E El Carmen” y
+                            “Nueva línea 2x66 kV
+                            Fuentecilla – El Carmen” individualizadas en los numerales 4.2.9 y
+                            4.2.10
+                            respectivamente del presente Informe.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras e instalaciones comunes del patio de 66 kV de la subestación
+                            Fuentecilla, cuya
+                            configuración corresponde a barra principal con barra de transferencia,
+                            para tres nuevas
+                            posiciones, de manera de permitir la conexión de la línea asociada a la
+                            obra Nueva línea
+                            2x66 kV Fuentecilla – El Carmen y un nuevo proyecto en la zona.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barras</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
+                            transferencia</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la línea asociada a la obra Nueva
+                            línea 2x66 kV Fuentecilla – El Carmen y un nuevo proyecto en la zona.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">1</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-71.09103399999999,-34.428697,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2552,6 +3010,47 @@
                     <ns0:coordinates>-71.639994,-35.436838, 0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
+
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Monterrico 66 kV (BP+BT)</ns0:name>
+                <ns0:styleUrl>#Amp_100_l</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_100_l">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Monterrico 66 kV (BP+BT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">1.159.402 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 48 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="LICITACION">La adjudicación de esta obra quedará
+                            condicionada a la adjudicación de la obra “Nueva S/E Coihueco y nueva
+                            línea 2x66 kV
+                            Monterrico – Coihueco”, individualizada en el numeral 4.2.12 del
+                            presente Informe.</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en la ampliación de las
+                            barras e instalaciones comunes del patio de 66 kV de la subestación
+                            Monterrico, cuya
+                            configuración corresponde a barra principal con barra de transferencia,
+                            para dos nuevas
+                            posiciones, de manera de permitir la conexión de la obra “Nueva S/E
+                            Coihueco y nueva
+                            línea 2x66 kV Monterrico – Coihueco”.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">ampliación barras</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">patio 66 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra principal con barra de
+                            transferencia</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la obra “Nueva S/E Coihueco y
+                            nueva
+                            línea 2x66 kV Monterrico – Coihueco”.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-72.06194000000001,-36.61253,0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
             <ns0:Placemark>
                 <ns0:name>Ampliación en S/E Coronel (RTR ATMT)</ns0:name>
                 <ns0:styleUrl>#Amp_210</ns0:styleUrl>
@@ -2610,6 +3109,55 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-73.15198544,-37.00881822, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Cabrero (NTR ATMT)</ns0:name>
+                <ns0:styleUrl>#Amp_110</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_110">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Cabrero (NTR ATMT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">4.463.662 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Cabrero mediante la instalación de un nuevo
+                            transformador
+                            66/23 kV y, al menos, 30 MVA de capacidad. Adicionalmente, el proyecto
+                            considera la
+                            construcción de una nueva sección de barra de 23 kV, en configuración
+                            barra simple,
+                            contemplándose la construcción de, al menos, cuatro paños para
+                            alimentadores, el paño de
+                            conexión del transformador antes mencionado, la construcción de un paño
+                            de interconexión
+                            con la barra existente y espacio en barra para la construcción de dos
+                            paños futuros.</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">construcción nueva barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">nueva barra 23 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['la construcción de, al menos,
+                            cuatro paños para alimentadores, el paño de conexión del transformador
+                            antes mencionado,
+                            la construcción de un paño de interconexión con la barra existente y
+                            espacio en barra
+                            para la construcción de dos paños futuros.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">al menos 2 paño(s)
+                            futuro(s)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">None</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">nuevo transformador 66/23 kV
+                            , Cap: 16 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-72.39663,-37.040199,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
@@ -2676,6 +3224,67 @@
                 </ns0:ExtendedData>
                 <ns0:Point>
                     <ns0:coordinates>-73.39383331,-37.83248605, 0</ns0:coordinates>
+                </ns0:Point>
+            </ns0:Placemark>
+            <ns0:Placemark>
+                <ns0:name>Ampliación en S/E Pitrufquén (NTR ATMT)</ns0:name>
+                <ns0:styleUrl>#Amp_210</ns0:styleUrl>
+                <ns0:ExtendedData>
+                    <ns0:SchemaData schemaUrl="#Amp_210">
+                        <ns0:SimpleData name="OBRA">Ampliación en S/E Pitrufquén (NTR ATMT)</ns0:SimpleData>
+                        <ns0:SimpleData name="DECRETO">PET Final 2023</ns0:SimpleData>
+                        <ns0:SimpleData name="TIPO">Ampliación</ns0:SimpleData>
+                        <ns0:SimpleData name="VI">6.732.605 dólares</ns0:SimpleData>
+                        <ns0:SimpleData name="ENTRADA_OP">a más tardar, dentro de los 36 meses
+                            siguientes a la fecha de publicación en el Diario Oficial del respectivo
+                            decreto</ns0:SimpleData>
+                        <ns0:SimpleData name="RESUMEN">El proyecto consiste en el aumento de
+                            capacidad de la subestación Pitrufquén mediante la instalación de un
+                            nuevo transformador 66/15 kV, así como un nuevo transformador 66/13,2 kV
+                            de, al menos, 30 MVA de capacidad cada uno. su vez, el proyecto
+                            considera la ampliación de la barra de transferencia, de manera de
+                            permitir la conexión de los nuevos transformadores. Adicionalmente, el
+                            proyecto considera la construcción de una nueva sección de barra de 15
+                            kV, en configuración barra simple, contemplándose la construcción de, al
+                            menos, tres paños para alimentadores, el paño de conexión del nuevo
+                            transformador 66/15 kV antes mencionado y la construcción de un paño de
+                            interconexión con la barra existente. Además, el proyecto considera la
+                            construcción de una nueva sección de barra de 13,2 kV en configuración
+                            barra simple, contemplándose la construcción de, al menos, tres paños
+                            para alimentadores, un paño para para la reubicación del alimentador
+                            asociado al transformador T3 y el paño de conexión del transformador
+                            66/13,2 kV. </ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tipo">nueva seccion barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_tension">barra 15 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_conexiones">['menos, tres paños para
+                            alimentadores, el paño de conexión del nuevo transformador 66/15 kV
+                            antes mencionado y la construcción de un paño de interconexión con la
+                            barra existente.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio1_posiciones_disponibles">0 (corroborar)</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tipo">nueva seccion barra</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_tension">barra 13,2 kV</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_configuracion">barra simple</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_conexiones">['la construcción de, al menos,
+                            tres paños para alimentadores, un paño para para la reubicación del
+                            alimentador asociado al transformador T3 y el paño de conexión del
+                            transformador 66/13,2 kV.']</ns0:SimpleData>
+                        <ns0:SimpleData name="patio2_posiciones_disponibles">0 (corroborar)</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_reemplazado">N/A</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_tension_trafo_nvo">transformación 66/15 kV ,
+                            Cap: 30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo2_tipo">instalación nuevo transformador</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo2_tension_trafo_reemplazado">N/A</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo2_tension_trafo_nvo">transformación 66/13,5 kV ,
+                            Cap: 30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="trafo1_Capacidad">30 MVA</ns0:SimpleData>
+                        <ns0:SimpleData name="parrafo1">N/A</ns0:SimpleData>
+                    </ns0:SchemaData>
+                </ns0:ExtendedData>
+                <ns0:Point>
+                    <ns0:coordinates>-72.64887835,-38.98396637,0</ns0:coordinates>
                 </ns0:Point>
             </ns0:Placemark>
             <ns0:Placemark>
