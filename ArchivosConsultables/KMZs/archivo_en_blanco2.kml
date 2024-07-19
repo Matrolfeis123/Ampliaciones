@@ -1,0 +1,2170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:kml xmlns:ns0="http://www.opengis.net/kml/2.2">
+    <ns0:Document>
+        <ns0:name>doc_trinergy.kml</ns0:name>
+        <ns0:Schema name="Amp_211" id="Amp_211">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="parrafo1">
+                <ns0:displayName>parrafo1</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_101" id="Amp_101">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="parrafo1">
+                <ns0:displayName>parrafo1</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_110" id="Amp_110">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_210" id="Amp_210">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_310" id="Amp_310">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_tipo">
+                <ns0:displayName>patio3_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_tension">
+                <ns0:displayName>patio3_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_configuracion">
+                <ns0:displayName>patio3_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_conexiones">
+                <ns0:displayName>patio3_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_posiciones_disponibles">
+                <ns0:displayName>patio3_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_100" id="Amp_100">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_200" id="Amp_200">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_211_l" id="Amp_211_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="parrafo1">
+                <ns0:displayName>parrafo1</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_101_l" id="Amp_101_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="parrafo1">
+                <ns0:displayName>parrafo1</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_110_l" id="Amp_110_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_210_l" id="Amp_210_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_310_l" id="Amp_310_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_tipo">
+                <ns0:displayName>patio3_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_tension">
+                <ns0:displayName>patio3_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_configuracion">
+                <ns0:displayName>patio3_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_conexiones">
+                <ns0:displayName>patio3_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio3_posiciones_disponibles">
+                <ns0:displayName>patio3_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tipo">
+                <ns0:displayName>trafo1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_reemplazado">
+                <ns0:displayName>trafo1_tension_trafo_reemplazado</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_tension_trafo_nvo">
+                <ns0:displayName>trafo1_tension_trafo_nvo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="trafo1_Capacidad">
+                <ns0:displayName>trafo1_Capacidad</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_100_l" id="Amp_100_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+        <ns0:Schema name="Amp_200_l" id="Amp_200_l">
+            <ns0:SimpleField type="string" name="OBRA">
+                <ns0:displayName>OBRA</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="DECRETO">
+                <ns0:displayName>DECRETO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="TIPO">
+                <ns0:displayName>TIPO</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="double" name="VI">
+                <ns0:displayName>VI</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="ENTRADA_OP">
+                <ns0:displayName>ENTRADA_OP</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="LICITACION">
+                <ns0:displayName>LICITACION</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="RESUMEN">
+                <ns0:displayName>RESUMEN</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tipo">
+                <ns0:displayName>patio1_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_tension">
+                <ns0:displayName>patio1_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_configuracion">
+                <ns0:displayName>patio1_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_conexiones">
+                <ns0:displayName>patio1_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio1_posiciones_disponibles">
+                <ns0:displayName>patio1_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tipo">
+                <ns0:displayName>patio2_tipo</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_tension">
+                <ns0:displayName>patio2_tension</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_configuracion">
+                <ns0:displayName>patio2_configuracion</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_conexiones">
+                <ns0:displayName>patio2_conexiones</ns0:displayName>
+            </ns0:SimpleField>
+            <ns0:SimpleField type="string" name="patio2_posiciones_disponibles">
+                <ns0:displayName>patio2_posiciones_disponibles</ns0:displayName>
+            </ns0:SimpleField>
+        </ns0:Schema>
+
+
+        <ns0:Style id="Amp_200">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_200/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_211">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_211/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_211/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_211/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;&lt;div style="margin-top: 10px; text-align:
+                    justify;"&gt;&lt;p&gt;$[Amp_211/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_101">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_101/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_101/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_101/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_101/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_101/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_101/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;&lt;div style="margin-top: 10px; text-align:
+                    justify;"&gt;&lt;p&gt;$[Amp_101/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_110">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_110/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_110/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_110/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_110/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_210">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_210/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_210/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_210/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_310">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_310/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310/patio3_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio3_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio3_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310/patio3_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/patio3_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_100">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_100/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_100/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_100/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_100/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_100/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_100/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_200">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;NUEVA SUBESTACION&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_200/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+
+
+        <ns0:Style id="Amp_211_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_211_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_211_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_211_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_211_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211_l/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_211_l/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_211_l/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_211_l/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;&lt;div style="margin-top: 10px; text-align:
+                    justify;"&gt;&lt;p&gt;$[Amp_211_l/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_101_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_101_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_101_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_101_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_101_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_101_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_101_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_101_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_101_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;&lt;div style="margin-top: 10px; text-align:
+                    justify;"&gt;&lt;p&gt;$[Amp_101_l/parrafo1]&lt;/p&gt;&lt;/div&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_110_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_110_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_110_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_110_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_110_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_110_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_110_l/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_110_l/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_210_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_210_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_210_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_210_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_210_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210_l/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_210_l/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_210_l/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_210_l/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_310_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_310_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_310_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_310_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310_l/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310_l/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310_l/patio3_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio3_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio3_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_310_l/patio3_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/patio3_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Reemplazado&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión Trafo Nuevo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Capacidad&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_310_l/trafo1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/trafo1_tension_trafo_reemplazado]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/trafo1_tension_trafo_nvo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_310_l/trafo1_Capacidad]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_100_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_100_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_100_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_100_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_100_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_100_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_100_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_100_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_100_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Style id="Amp_200_l">
+            <ns0:IconStyle>
+                <ns0:scale>1.16667</ns0:scale>
+                <ns0:Icon>
+                    <ns0:href>files/add_9.png</ns0:href>
+                </ns0:Icon>
+            </ns0:IconStyle>
+            <ns0:LabelStyle>
+                <ns0:color>00ffffff</ns0:color>
+            </ns0:LabelStyle>
+            <ns0:BalloonStyle>
+                <ns0:text>&lt;table border=0 cellpadding=0 cellspacing=1 summary="" width=400&gt;
+                    &lt;tr&gt;
+                    &lt;td width="100%" valign="middle" align="center"&gt;
+                    &lt;img src="files/trinergy_13.jpg" border="0" width="240" height="90"
+                    alt=""&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr cellpadding=1&gt;
+                    &lt;td width="100%" valign="middle" align="center" bgcolor=#8bb145&gt;
+                    &lt;b&gt;
+                    &lt;font face="Arial" color="#ffffff"&gt;
+                    &lt;h2.5&gt;AMPLIACIÓN SUBESTACIÓN&lt;/h2.5&gt;
+                    &lt;/font&gt;
+                    &lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table border="1" padding="0" style="margin-top: 10px; text-align: justify;
+                    width:auto;"&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Nombre&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200_l/OBRA]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Decreto&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200_l/DECRETO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td
+                    bgcolor="#AAAAAA"&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200_l/TIPO]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Valor
+                    Inversion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200_l/VI]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Entrada en
+                    Operacion&lt;/b&gt;&lt;/td&gt;=&lt;td&gt;$[Amp_200_l/ENTRADA_OP]&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Licitación&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_200_l/LICITACION]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td bgcolor="#AAAAAA"&gt;&lt;b&gt;Resumen&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="margin: 5px; padding-right: 10px; height:100px; overflow:auto;
+                    text-align: justify;"&gt;
+                    $[Amp_200_l/RESUMEN]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;
+
+                    &lt;table border="1" cellpadding="4" cellspacing="0" width="100%"
+                    style="margin-top: 10px; text-align: center;"&gt;
+                    &lt;tr&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tipo&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Tensión&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Configuración&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Conexiones&lt;/th&gt;
+                    &lt;th bgcolor="#AAAAAA"&gt;Posiciones Disponibles&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200_l/patio1_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio1_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio1_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200_l/patio1_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio1_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;$[Amp_200_l/patio2_tipo]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio2_tension]&lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio2_configuracion]&lt;/td&gt;
+                    &lt;td&gt;
+                    &lt;div style="overflow: auto; text-align: justify"&gt;
+                    $[Amp_200_l/patio2_conexiones]
+                    &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;$[Amp_200_l/patio2_posiciones_disponibles]&lt;/td&gt;
+                    &lt;/tr&gt;&lt;/table&gt;</ns0:text>
+            </ns0:BalloonStyle>
+        </ns0:Style>
+        <ns0:Folder>
+            <ns0:name>Ampliaciones</ns0:name>
+            <ns0:open>1</ns0:open>
+        </ns0:Folder>
+        <ns0:Folder>
+            <ns0:name>Obras nuevas</ns0:name>
+            <ns0:open>1</ns0:open>
+        </ns0:Folder>
+        <ns0:Folder>
+            <ns0:name>Nuevas Lineas</ns0:name>
+            <ns0:open>1</ns0:open>
+        </ns0:Folder>
+    </ns0:Document>
+</ns0:kml>

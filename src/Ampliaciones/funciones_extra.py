@@ -198,6 +198,16 @@ def generar_diccionario_ampliaciones(file):
             
             diccionario_obras_ampliacion[titulo] = (pag_inicio, pag_final)
 
+        patron_final = r"El C.O.M.A"
+        for titulo, paginas in diccionario_obras_ampliacion.items():
+            for i in range(paginas[0], paginas[1]):
+                text = pdf.pages[i].extract_text()
+                if re.search(patron_final, text, re.DOTALL):
+                    diccionario_obras_ampliacion[titulo] = (paginas[0], i)
+
+        print("Obras de ampliación: ")
+        for titulo, paginas in diccionario_obras_ampliacion.items():
+            print(f"{titulo}: {paginas}")
 
     return diccionario_obras_ampliacion
 
@@ -238,6 +248,13 @@ def generar_diccionario_descripciones_amp(file, diccionario):
                 dic_descripciones[titulo] = descripcion_def
     except Exception as e:
         print(f"Error en la ejecución del análisis: {e}")
+
+    
+    print("Descripciones generadas: ")
+    for titulo, descripcion in dic_descripciones.items():
+        print(f"{titulo}: {descripcion}")
+        print("-" * 50)
+        print("\n")
 
 
     return dic_descripciones
@@ -1194,4 +1211,8 @@ def main_agregar_proyecto_a_kmz():
 
 
 if __name__ == "__main__":
-    main_agregar_lineas_a_kmz()
+    #main_agregar_lineas_a_kmz()
+    pdf_file = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "PDFs", "plan_expansion_final_2023.pdf"))
+
+    diccionario_amp = generar_diccionario_ampliaciones(pdf_file)
+    dic_desc_amp = generar_diccionario_descripciones_amp(pdf_file, diccionario_amp)

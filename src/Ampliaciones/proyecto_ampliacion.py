@@ -5,7 +5,7 @@ import re
 import time
 import pdfplumber
 from openpyxl import Workbook
-from funciones_extra import extraer_texto_entre_delimitadores_v2
+from funciones_extra import extraer_texto_entre_delimitadores_v2, remove_stopwords
 from patio import Patio, Trafo, AmpBarraPatio
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -42,27 +42,25 @@ import string
 class Proyecto_ampliacion:
     def __init__(self, titulo, texto):
         self.texto = texto
+        self.indices = None
 
         self.nombre_proyecto = titulo
         self.nombre_se = None
-        self.parrafos = None
         self.tipo = "Ampliación"
+        self.ubicacion = None
         self.patios = [] #a partir del resumen, podemos extraer el resumen de cada patio y extraer la informacion necesaria: Tension, Config, N_posiciones, Conexiones. Pos_disp.
-        self.diccionario_patios = None
 
+        self.parrafos = None
+        self.diccionario_patios = None
 
         self.valor_inversion = None
         self.entrada_operacion = None
         self.licitacion = None
 
-
-        self.numero_posiciones = None
-        self.patios = [] #??
-        self.posiciones_disponibles = "No procesed"
-
-        self.resumen_proyecto = ""
         self.decreto =  "PET Final 2023"
-
+        self.resumen = ""
+        self.diccionario_kmz = {}        
+        
         self.diccionario_patios = {}
         self.diccionario_trafos = {}
         self.diccionario_otros = {}
@@ -74,20 +72,15 @@ class Proyecto_ampliacion:
 
     def extraer_nombre_subestacion(self):
         # Define la expresión regular para extraer el nombre de la subestación
-        patron = r"S/E\s+([^0-9\(\)]+)(?:\s+\d{1,3}\s*kV)?"
-        
-        # Busca el patrón en el título
-        resultado = re.search(patron, self.nombre_proyecto)
-        
-        if resultado:
-            # Devuelve el nombre de la subestación
-            nombre = resultado.group(1).strip()
-            nombre_def = f"S/E {nombre}"
-            return nombre_def
-        else:
-            # Si no se encuentra el patrón, devuelve None o un mensaje de error
-            return None
+        patron  = r"S/E\s+([^0-9\(\),]+)"
+        match = re.search(patron, self.nombre_proyecto)
 
+        if match:
+            nombre = match.group(1).strip()
+            return f"S/E {nombre}"
+        
+        else:
+            return None
 
     def extraer_resumen(self):
         # Definimos las frases de inicio y fin
@@ -106,7 +99,6 @@ class Proyecto_ampliacion:
         else:
             return None
 
-  
     def extraer_valor_inversion(self):
         # Patrón de expresión regular para encontrar el valor de inversión
         patron = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)?) dólares", re.IGNORECASE)
@@ -120,7 +112,6 @@ class Proyecto_ampliacion:
             return valor_inversion
         else:
             return None  # Devolver None si no se encuentra el valor de inversión
-
 
     def extraer_entrada_operacion(self):
         # patron que identifique la frase: El proyecto deberá ser construido y entrar en operación, a más tardar, dentro de los dd meses siguientes a la fecha de publicación en el Diario Oficial del respectivo decreto
@@ -151,42 +142,6 @@ class Proyecto_ampliacion:
         
         else:
             return None
-
-    def imprimir_resumen_atributos_proyecto(self):
-        print(f"Nombre del proyecto: {self.nombre_proyecto}")
-        print(f"Tipo de proyecto: {self.tipo}")
-        print(f"Resumen del proyecto: {self.resumen_proyecto}")
-        print(f"Valor de inversión: {self.valor_inversion}")
-        print(f"Entrada en operación: {self.entrada_operacion}")
-        print("\n")
-
-    def generar_diccionario_proyecto(self, l_patios, l_trafos, l_otros):
-        self.diccionario_proyecto = {
-            "nombre_se": self.nombre_se,
-            "obra": self.nombre_proyecto,
-            "decreto": self.decreto,
-            "tipo": self.tipo,
-            "vi": self.valor_inversion,
-            "entrada_op": self.entrada_operacion,
-            "licitacion": self.licitacion,
-            "resumen": self.resumen_proyecto,
-            "patios": self.diccionario_patios,
-            "n_patios": len(l_patios),
-            "trafos": self.diccionario_trafos,
-            "n_trafos": len(l_trafos),
-            "otros": self.diccionario_otros,
-            "n_otros": len(l_otros)
-        }
-        
-        return self.diccionario_proyecto
-        
-
-    def remove_stopwords(self, texto):
-        stop_words = set(stopwords.words('spanish'))
-        tokens = nltk.word_tokenize(texto)
-        tokens = [word for word in tokens if word.lower() not in stop_words]
-        tokens = [word for word in tokens if word.lower() not in string.punctuation]
-        return " ".join(tokens)
 
     def clasificar_parrafo(self, parrafo):
         tipo_aumento_capacidad = ["instalación nuevo transformador", "reemplazo actual transformador"] #caso inst o const trafo
@@ -223,6 +178,10 @@ class Proyecto_ampliacion:
                 tipo = "otro"
                 elemento_encontrado = elemento
                 return tipo, elemento_encontrado
+            
+        if "deberá emplazar" in parrafo:
+            tipo = "UBICACION"
+            return tipo
         
 
 
@@ -243,7 +202,7 @@ class Proyecto_ampliacion:
         """
 
         self.nombre_se = self.extraer_nombre_subestacion()
-        self.resumen_proyecto = self.extraer_resumen()
+        self.resumen = self.extraer_resumen()
         self.entrada_operacion = self.extraer_entrada_operacion()
         self.valor_inversion = self.extraer_valor_inversion()
         self.licitacion = self.extraer_licitacion()
@@ -257,8 +216,9 @@ class Proyecto_ampliacion:
 
 
         for parrafo in self.parrafos:
-            parrafo_limpio = self.remove_stopwords(parrafo)
+            parrafo_limpio = remove_stopwords(parrafo)
             tipo, elemento = self.clasificar_parrafo(parrafo_limpio)
+
             if tipo == "no_interesa":
                 pass
 
@@ -281,6 +241,10 @@ class Proyecto_ampliacion:
                 # Este es el caso donde vamos a chantar el parrafo nomas en la trajeta de XML
                 otros.append(parrafo)
                 pass         
+
+            elif tipo == "UBICACION":
+                self.ubicacion = parrafo
+
 
         #self.imprimir_resumen_atributos_proyecto()
 
@@ -305,6 +269,41 @@ class Proyecto_ampliacion:
 
         self.generar_diccionario_proyecto(patios, trafos, otros)
 
-        
 
+
+
+    def imprimir_resumen_atributos_proyecto(self):
+        print(f"Nombre del proyecto: {self.nombre_proyecto}")
+        print(f"Tipo de proyecto: {self.tipo}")
+        print(f"Resumen del proyecto: {self.resumen}")
+        print(f"Valor de inversión: {self.valor_inversion}")
+        print(f"Entrada en operación: {self.entrada_operacion}")
+        print("\n")
+
+    def generar_diccionario_proyecto(self, l_patios, l_trafos, l_otros):
+        self.diccionario_proyecto = {
+            "nombre_se": self.nombre_se,
+            "obra": self.nombre_proyecto,
+            "decreto": self.decreto,
+            "tipo": self.tipo,
+            "vi": self.valor_inversion,
+            "entrada_op": self.entrada_operacion,
+            "licitacion": self.licitacion,
+            "resumen": self.resumen,
+            "patios": self.diccionario_patios,
+            "n_patios": len(l_patios),
+            "trafos": self.diccionario_trafos,
+            "n_trafos": len(l_trafos),
+            "otros": self.diccionario_otros,
+            "n_otros": len(l_otros)
+        }
+
+        self.diccionario_proyecto["diseño"] = f"Amp_{len(l_patios)}{len(l_trafos)}{len(l_otros)}"
+
+        if self.licitacion:
+            self.diccionario_proyecto["diseño"] += "_l"
+
+        
+        return self.diccionario_proyecto
+        
 

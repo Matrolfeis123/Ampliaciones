@@ -566,7 +566,8 @@ def informe_proyectos_no_procesados(l_proyectos):
 
 def main():
     pdf_file = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "PDFs", "plan_expansion_final_2023.pdf"))
-    kml_write = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "archivo_en_blanco.kml"))
+    kml_write = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "archivo_en_blanco2.kml"))
+    kml_coordinador_file = os.path.abspath(os.path.join(os.getcwd(), "ArchivosConsultables", "KMZs", "SEN_coordinador", "doc_coordinador.kml"))
 
     dic_amp = generar_diccionario_ampliaciones(pdf_file)
     dic_desc_amp = generar_diccionario_descripciones_amp(pdf_file, dic_amp)
@@ -581,9 +582,10 @@ def main():
             proyecto = Proyecto_ampliacion(titulo, descripcion)
             proyecto.procesar_proyecto()
             print(proyecto.nombre_proyecto)
-            print(proyecto.licitacion)
             conteo_casos.append(proyecto.resultado)
             lista_proyectos.append(proyecto)
+
+            print(proyecto.diccionario_proyecto["diseño"])
 
         
         except Exception as e:
