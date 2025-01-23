@@ -509,6 +509,7 @@ def agregar_proyecto_ampliacion(proyecto, kml_write):
 
     if latitud == "manual" or longitud == "manual":
         print("El proyecto se manejara manualmente al final de la ejecucion")
+        breakpoint()
         return "manual"
 
     elif latitud and longitud:
@@ -530,6 +531,7 @@ def agregar_proyecto_ampliacion(proyecto, kml_write):
 
         except Exception as e:
             print("Error al agregar proyecto al KMZ: ", e)
+            breakpoint()
             return agregar_proyecto_ampliacion(proyecto)
 
         print("Proyecto agregado exitosamente al archivo KML.")
@@ -538,12 +540,65 @@ def agregar_proyecto_ampliacion(proyecto, kml_write):
     else:
         print("No se encontraron coordenadas para la subestación.")
         print(("El proyecto se manejara manualmente al final de la ejecucion"))
+        breakpoint()
         return "manual"
 
 
-def menu_opciones_proyectos(l_proyectos, kml_write):
+# def menu_opciones_proyectos(l_proyectos, kml_write):
 
+#     l_proy_manual = []
+
+#     for proyecto in l_proyectos:
+#         print("\n")
+#         print("Informacion del Proyecto: \n")
+
+#         for key, value in proyecto.diccionario_proyecto.items():
+#             print(f"{key}: {value}")
+
+#         print("\n")
+#         print("¿Qué desea hacer?")
+#         print("1. Agregar proyecto al KMZ")
+#         print("2. Manejar Manualmente y Continuar con el siguiente proyecto")
+#         print("3. Salir del programa")
+#         print("\n")
+#         opcion = input("Ingrese el número de la opción deseada: ")
+
+#         if opcion == "1":
+#             print("Implementar función para agregar proyecto al KMZ")
+#             qtal = agregar_proyecto_ampliacion(proyecto, kml_write)
+
+#             if qtal == "manual":
+#                 print("WTF")
+#                 breakpoint()
+#                 l_proy_manual.append(proyecto)
+#                 l_proyectos.remove(proyecto)
+#                 continue
+
+#             else:
+#                 l_proyectos.remove(proyecto)
+#                 continue
+
+#         elif opcion == "2":
+#             l_proy_manual.append(proyecto)
+#             l_proyectos.remove(proyecto)
+#             continue
+
+#         elif opcion == "3":
+#             print("Saliendo del programa...")
+#             exit()
+
+#         elif opcion == "123":
+#             breakpoint()
+
+#         else:
+#             print("Opción inválida. Por favor, ingrese una opción válida.")
+#             return menu_opciones_proyectos(l_proyectos)
+
+#     return l_proy_manual
+
+def menu_opciones_proyectos(l_proyectos, kml_write):
     l_proy_manual = []
+    proyectos_a_eliminar = []
 
     for proyecto in l_proyectos:
         print("\n")
@@ -565,17 +620,19 @@ def menu_opciones_proyectos(l_proyectos, kml_write):
             qtal = agregar_proyecto_ampliacion(proyecto, kml_write)
 
             if qtal == "manual":
+                print("WTF")
+                breakpoint()
                 l_proy_manual.append(proyecto)
-                l_proyectos.remove(proyecto)
+                proyectos_a_eliminar.append(proyecto)
                 continue
 
             else:
-                l_proyectos.remove(proyecto)
+                proyectos_a_eliminar.append(proyecto)
                 continue
 
         elif opcion == "2":
             l_proy_manual.append(proyecto)
-            l_proyectos.remove(proyecto)
+            proyectos_a_eliminar.append(proyecto)
             continue
 
         elif opcion == "3":
@@ -588,6 +645,9 @@ def menu_opciones_proyectos(l_proyectos, kml_write):
         else:
             print("Opción inválida. Por favor, ingrese una opción válida.")
             return menu_opciones_proyectos(l_proyectos)
+
+    for proyecto in proyectos_a_eliminar:
+        l_proyectos.remove(proyecto)
 
     return l_proy_manual
 
@@ -643,6 +703,8 @@ def main():
             continue
 
     print("\n")
+    print(lista_proyectos)
+    breakpoint()
     disenos_unicos = identificar_disenos(conteo_casos)
     print(disenos_unicos)
     print("\n")
